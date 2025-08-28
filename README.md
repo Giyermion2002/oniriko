@@ -13,7 +13,7 @@
   - oniriko-frontend: Módulo frontal desarrollado con el framework react-ts. Dispone de un Dockerfile que buildea el frontal y lo levanta en un servidor con nginx en el puerto 80.
 ## Construcción y ejecución
 
-Se requiere de un único comando para la construcción y ejecución de oniriko: `mvn clean install -P docker`. 
+Se requiere de un único comando para la construcción y ejecución de oniriko: `mvn clean install`. 
 
 Esto comando creará un compose con 3 contenedores:
     - La base de datos 'oniriko-db' (expuesta en el puerto 3306).
