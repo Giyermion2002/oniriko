@@ -1,7 +1,0 @@
-CREATE TABLE products (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(25) NOT NULL,
-    price DECIMAL(10,2) NOT NULL,
-    discount TINYINT DEFAULT 0,
-    PRIMARY KEY (id)
-);
