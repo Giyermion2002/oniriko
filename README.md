@@ -10,7 +10,7 @@
   - oniriko-docker: Modulo con el docker-compose para orquestar la creación de imagenes y contenedores de los distintos módulos.
 ## Construcción y ejecución
 
-Se requiere de un único comando para la construcción y ejecución de oniriko: `mvn clean instal -P docker`. 
+Se requiere de un único comando para la construcción y ejecución de oniriko: `mvn clean install -P docker`. 
 
 Esto comando creará un compose con 2 contenedores:
     - La base de datos 'oniriko-db' (expuesta en el puerto 3306).
