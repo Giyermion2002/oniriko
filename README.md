@@ -10,7 +10,7 @@ Qué se quiere:
 - Deben reflejarse en algún lado de la página las distintas redes sociales de oniriko, con logos nombres de usuario y links.
 - Para los pagos, solamente con Tarjeta de crédito o PayPal, Bizum y otros no.
 - La estética de todo la página debe ser con colores marrón crema.
-
+- Mediante un qr llegar a la pagina con el menú de la cafetería.
 
 A futuro: 
   - Una pestaña para reservas (Para modo admin/trabajador ¿se podría hacer una forma de acceder a qué reservas se han realizado?)
