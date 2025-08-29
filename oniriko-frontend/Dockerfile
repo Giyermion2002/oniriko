@@ -1,16 +1,16 @@
 # ------------------------------------------------------------------------------------------------------------------
     
-FROM node:22-alpine3.21 as deps
+FROM node:22-alpine3.21 AS deps
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+COPY package.json ./
 
-RUN yarn install --frozen-lockfile
+RUN yarn install
 
 # ------------------------------------------------------------------------------------------------------------------
 
-FROM node:22-alpine3.21 as builder
+FROM node:22-alpine3.21 AS builder
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ RUN yarn build
 
 # ------------------------------------------------------------------------------------------------------------------
 
-FROM nginx:1.29.1-alpine as runner
+FROM nginx:1.29.1-alpine AS runner
 
 WORKDIR /app
 
