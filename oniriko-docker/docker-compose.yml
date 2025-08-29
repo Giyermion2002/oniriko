@@ -4,6 +4,7 @@ services:
     build:
       context: ../oniriko-bbdd
       dockerfile: ../oniriko-bbdd/Dockerfile
+    image: oniriko-bbdd:${IMAGE_VERSION}
     container_name: oniriko-db
     restart: always
     ports:
@@ -17,6 +18,7 @@ services:
     build:
       context: ../oniriko-backend
       dockerfile: ../oniriko-backend/Dockerfile
+    image: oniriko-backend:${IMAGE_VERSION}
     container_name: oniriko-backend
     restart: always
     depends_on:
@@ -30,6 +32,7 @@ services:
     build:
       context: ../oniriko-frontend
       dockerfile: ../oniriko-frontend/Dockerfile
+    image: oniriko-frontend:${IMAGE_VERSION}
     container_name: oniriko-frontend
     restart: always
     ports:

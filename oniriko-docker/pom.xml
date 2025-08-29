@@ -34,6 +34,9 @@
                                 <argument>--force-recreate</argument>
                             </arguments>
                             <outputFile>${project.build.directory}/docker-run.log</outputFile>
+                            <environmentVariables>
+                                <IMAGE_VERSION>${project.version}</IMAGE_VERSION>
+                            </environmentVariables>
                         </configuration>
                     </execution>
                 </executions>
