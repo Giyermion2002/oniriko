@@ -1,0 +1,32 @@
+{
+  "header": {
+    "title": "Oníriko Specialty Coffee",
+    "navigation": {
+      "home": "Home",
+      "menu": "Menu",
+      "products": "Products",
+      "courses": "Courses",
+      "social": "Social Media"
+    }
+  },
+  "home": {
+    "title": "Home Page",
+    "description": "This is the home page of the application."
+  },
+  "menu": {
+    "title": "Menu Page",
+    "description": "This is the menu page of the application."
+  },
+  "products": {
+    "title": "Products Page",
+    "description": "This is the products page of the application."
+  },
+  "courses": {
+    "title": "Courses Page",
+    "description": "This is the courses page of the application."
+  },
+  "social": {
+    "title": "Social Media Page",
+    "description": "This is the social media page of the application."
+  }
+}

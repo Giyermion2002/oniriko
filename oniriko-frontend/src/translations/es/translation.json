@@ -1,0 +1,32 @@
+{
+  "header": {
+    "title": "Oníriko Specialty Coffee",
+    "navigation": {
+      "home": "Inicio",
+      "menu": "Menú",
+      "products": "Productos",
+      "courses": "Cursos",
+      "social": "Redes sociales"
+    }
+  },
+  "home": {
+    "title": "Página principal",
+    "description": "Esta es la página principal de la aplicación."
+  },
+  "menu": {
+    "title": "Página de menú",
+    "description": "Esta es la página de menú de la aplicación."
+  },
+  "products": {
+    "title": "Página de productos",
+    "description": "Esta es la página de productos de la aplicación."
+  },
+  "courses": {
+    "title": "Página de cursos",
+    "description": "Esta es la página de cursos de la aplicación."
+  },
+  "social": {
+    "title": "Página de redes sociales",
+    "description": "Esta es la página de redes sociales de la aplicación."
+  }
+}

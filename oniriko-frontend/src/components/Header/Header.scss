@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    margin: 0;
+    width: 15dvw;
+  }
+
+  .header-navbar {
+    width: 65dvw;
+  }
+}

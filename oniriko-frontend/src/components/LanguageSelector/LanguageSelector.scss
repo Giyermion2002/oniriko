@@ -1,0 +1,27 @@
+.language-selector {
+  cursor: pointer;
+  width: 7.5dvw;
+  min-width: 8em;
+
+  .MuiSelect-select {
+    display: flex;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-radius: 8px;
+
+    &:hover {
+      border-color: gray;
+    }
+  }
+
+  .language-selector-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.language-selector-flag {
+  width: 1.25em;
+  margin-right: 0.5em;
+}
