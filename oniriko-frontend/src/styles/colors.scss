@@ -1,0 +1,7 @@
+@use "sass:color";
+
+// Ahora que no hay video se deja sin transparentar.
+$header-background: rgba(197, 181, 173, 0.95);
+$app-background: rgba(178, 173, 170, 0.85);
+$header-title-color: #603E0C;
+$header-nav-color: #674d25;

@@ -1,3 +1,5 @@
+@use './styles/colors.scss' as *;
+
 html,
 body,
 #root {
@@ -8,7 +10,7 @@ body,
   height: 100vh; // fallback clásico para navegadores antiguos
   height: 100dvh; // soportado en navegadores modernos -> ajusta en móviles
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // Añadir padding para respetar las safe areas (ej: notch, barras)
@@ -17,16 +19,38 @@ body,
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   box-sizing: border-box; // evita que el padding rompa el layout
-  
+
   .app {
-    display:flex;
+    display: flex;
     flex-direction: column;
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+
     .header {
       height: 10dvh;
+      background-color: $header-background;
+
+      .header-title {
+        color: $header-title-color;
+      }
     }
+
     .app-container {
       padding: 0em 1em;
       height: 90dvh;
+      background-color: $app-background;
+    }
+
+    .app-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // mantiene proporción y cubre todo
+      z-index: -9999;
     }
   }
 }

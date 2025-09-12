@@ -1,12 +1,15 @@
+@use '../../styles/colors.scss' as *;
+
 .navbar {
     flex-direction: row !important;
     justify-content: space-around;
     align-items: center;
     padding: 1em;
-    background-color: whitesmoke;
 
     .nav-link {
-        color: blueviolet;
+        color: $header-nav-color;
+        font-weight: 500;
+        font-size: 1.20em;
         position: relative;
         display: inline-block;
         cursor: pointer;
@@ -20,7 +23,7 @@
             bottom: -3px; // ajusta según el grosor de la "barra"
             width: 100%;
             height: 3px;
-            background-color: blueviolet;
+            background-color: $header-nav-color;
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.3s ease;

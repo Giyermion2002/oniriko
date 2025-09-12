@@ -1,27 +1,44 @@
+@use '../../styles/colors.scss' as *;
+
 .language-selector {
   cursor: pointer;
-  width: 7.5dvw;
-  min-width: 8em;
+  width: 8dvw;
+  min-width: 9em;
 
   .MuiSelect-select {
     display: flex;
+    color: $header-nav-color;
+
+    &:focus-visible {
+      border:none
+    }
   }
 
   .MuiOutlinedInput-notchedOutline {
     border-radius: 8px;
-
-    &:hover {
-      border-color: gray;
-    }
-  }
-
-  .language-selector-item {
-    display: flex;
-    align-items: center;
+    border: 1.5px solid $header-nav-color;
   }
 }
 
-.language-selector-flag {
+.language-selector-menu {
+
+  .MuiMenu-list {
+    background-color: $header-background;
+
+    .language-selector-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.language-selector-item-flag {
   width: 1.25em;
   margin-right: 0.5em;
+}
+
+.language-selector-item-label {
+  color: $header-nav-color;
+  font-weight: 500;
+  font-size: 1.20em;
 }

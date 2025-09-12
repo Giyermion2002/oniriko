@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Select, MenuItem, type SelectChangeEvent } from "@mui/material";
-import SpanishFlag from "../../assets/SpanishFlag.svg";
-import EnglishFlag from "../../assets/EnglishFlag.svg";
+import SpanishFlag from "../../assets/images/SpanishFlag.svg";
+import EnglishFlag from "../../assets/images/EnglishFlag.svg";
 import './LanguageSelector.scss';
 
 const languages = [
@@ -32,15 +32,20 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className }) => {
       variant="outlined"
       size="small"
       className={`language-selector ${className ?? ""}`}
+      MenuProps={{
+        PaperProps: {
+          className: 'language-selector-menu',
+        }
+      }}
     >
       {languages.map((lang) => (
         <MenuItem key={lang.code} value={lang.code} className="language-selector-item">
           <img
-            className="language-selector-flag"
+            className="language-selector-item-flag"
             src={lang.flag}
             alt={lang.label}
           />
-          {lang.label}
+          <span className="language-selector-item-label">{lang.label}</span>
         </MenuItem>
       ))}
     </Select>
