@@ -1,8 +1,8 @@
+import { MenuItem, Select, type SelectChangeEvent } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Select, MenuItem, type SelectChangeEvent } from "@mui/material";
-import SpanishFlag from "../../assets/images/SpanishFlag.svg";
 import EnglishFlag from "../../assets/images/EnglishFlag.svg";
+import SpanishFlag from "../../assets/images/SpanishFlag.svg";
 import './LanguageSelector.scss';
 
 const languages = [
@@ -12,9 +12,10 @@ const languages = [
 
 interface LanguageSelectorProps {
   className?: string;
+  compact?: boolean;
 }
 
-const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className }) => {
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className, compact }) => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
@@ -22,7 +23,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className }) => {
   };
 
   const handleChange = (event: SelectChangeEvent) => {
-    changeLanguage(event.target.value as string); // 👈 aquí lo castea a string
+    changeLanguage(event.target.value as string);
   };
 
   return (
@@ -45,7 +46,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className }) => {
             src={lang.flag}
             alt={lang.label}
           />
-          <span className="language-selector-item-label">{lang.label}</span>
+          {!compact && <span className="language-selector-item-label">{lang.label}</span>}
         </MenuItem>
       ))}
     </Select>

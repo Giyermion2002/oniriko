@@ -1,3 +1,5 @@
+@use '../../styles/colors.scss' as *;
+
 .header {
   display: flex;
   flex-direction: row;
@@ -15,4 +17,65 @@
   .header-navbar {
     width: 65dvw;
   }
+
+  .mobile {
+    display: none; // oculto en desktop
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .desktop {
+      display: none; // navbar y selector de idioma de modo desktop ocultos
+    }
+
+    .mobile {
+      display: block; // botón para abrir el navbar visible
+    }
+
+    .header-title {
+      width: 60dvw;
+      text-align: center;
+    }
+
+    .language-selector {
+      min-width: 4em;
+
+      .MuiOutlinedInput-notchedOutline {
+        border: none;
+      }
+    }
+
+  }
+
+  .language-selector-menu {
+    .MuiMenu-list {
+      .language-selector-item {
+        justify-content: center;
+      }
+    }
+  }
+
+  .mobile-drawer {
+    width: 250px;
+    padding: 1em;
+
+    .navbar {
+      flex-direction: column !important;
+      align-items: flex-start;
+
+      .nav-link {
+        margin: 0.5em 0;
+      }
+
+      .navbar-drawer-modal {
+        background-color: $header-background;
+      }
+    }
+  }
+
 }
