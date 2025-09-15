@@ -19,6 +19,8 @@ body,
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   box-sizing: border-box; // evita que el padding rompa el layout
+  scrollbar-width: auto; // grosor (auto | thin | none)
+  scrollbar-color: $primary-color-light transparent; // thumb color | track color
 
   .app {
     display: flex;
@@ -29,18 +31,19 @@ body,
     overflow: hidden;
 
     .header {
-      height: 10dvh;
+      height: 30dvh;
       background-color: $header-background;
 
       .header-title {
-        color: $header-title-color;
+        color: $primary-color;
       }
     }
 
     .app-container {
       padding: 0em 1em;
-      height: 90dvh;
+      min-height: 90dvh;
       background-color: $app-background;
+      overflow-y: auto;
     }
 
     .app-background {
@@ -49,7 +52,7 @@ body,
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover; // mantiene proporción y cubre todo
+      object-fit: cover; // para que la imagen cubra todo el fondo
       z-index: -9999;
     }
   }

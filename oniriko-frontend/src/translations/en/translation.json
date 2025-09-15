@@ -10,8 +10,30 @@
     }
   },
   "home": {
-    "title": "Home Page",
-    "description": "This is the home page of the application."
+    "first-paragraph": {
+      "text-1": "ONÍRIKO",
+      "text-2": "A change that goes far beyond a single word.",
+      "text-3": "Oníriko comes from “oneiric”, which belongs to the world of dreams… and that's exactly what we experience here, every single day."
+    },
+    "second-paragraph": {
+      "text-1": "That we are <b>dreaming awake</b>.",
+      "text-2": "That every cup is a <b>journey</b>.",
+      "text-3": "That every visit is a way to <b>come back home</b>.",
+      "text-4": "This new name reflects who we are: <b>dreamers, travelers, and home creators</b> in every corner of our café.",
+      "text-5": "We feel free, excited, and deeply grateful to share this journey with you.",
+      "text-6": "Thank you for being part of a story that keeps growing, now stronger than ever."
+    },
+    "third-paragraph": {
+      "text-1": "The mark you see here is not just a design: it reflects who we are and who we aspire to be. Every journey, every person, every moment has left a mark on our identity.",
+      "text-2": "🗺️ For years I lived with a suitcase in hand, discovering flavors, conversations, music, and corners I never imagined. And it was on that journey that I understood that identity is not static: it is built along the way, through exchange with others, and through curiosity about the unknown.",
+      "text-3": "Learning from different cultures, growing with every step, and experiencing the new taught me that, in the end, the most valuable thing is to find your own place in the world."
+    },
+    "fourth-paragraph": {
+      "text-1": "This is how <b>ONÍRIKO</b> was born: a space that gathers all these marks. A place where every visitor leaves their story and, at the same time, takes a little piece of the home we’ve built together.",
+      "text-2": "Today, ONÍRIKO is that meeting point where every cup, every corner, and every smile reflects a bit of my journey and a bit of your story. Here we celebrate the diversity of marks, the constant quest, and the infinite value of growing while feeling whole.",
+      "text-3": "Welcome to a space where identity is felt, discovered, and shared,",
+      "text-4": "Welcome to ONÍRIKO. ☕"
+    }
   },
   "menu": {
     "title": "Menu Page",

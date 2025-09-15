@@ -38,6 +38,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className, compact 
           className: 'language-selector-menu',
         }
       }}
+      
     >
       {languages.map((lang) => (
         <MenuItem key={lang.code} value={lang.code} className="language-selector-item">

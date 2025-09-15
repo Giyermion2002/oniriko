@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu";
 import Products from "./pages/Products";
 import Courses from "./pages/Courses";
