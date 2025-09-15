@@ -1,74 +1,110 @@
 @use "../../styles/colors" as *;
 
 .home-page {
-    padding: 1em 20dvw 5em 20dvw;
+  padding: 1em 20dvw 5em 20dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 7em;
+
+  .first-paragraph {
     display: flex;
     flex-direction: column;
-    gap: 7em;
+    gap: 2em;
 
+    .text-1 {
+      text-align: center;
+      font-size: 5dvw;
+      color: $primary-color;
+    }
+
+    .text-2 {
+      text-align: center;
+      font-size: 1.75dvw;
+      color: $primary-color;
+    }
+
+    .text-3 {
+      text-align: center;
+      font-size: 1dvw;
+      color: $primary-color-light;
+    }
+  }
+
+  .second-paragraph,
+  .third-paragraph,
+  .fourth-paragraph {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 1dvw;
+
+    .text {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 5em;
+    }
+
+    .image {
+      align-self: center;
+      width: 45%;
+      border-radius: 15px;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  .fourth-paragraph {
+    .final-text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      font-weight: 600;
+
+      .large {
+        font-size: 1.25dvw;
+      }
+    }
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .home-page {
+    padding: 1em 5dvw 5em 5dvw;
+    gap: 3.75em;
     .first-paragraph {
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
+      gap: .75em;
 
-        .text-1 {
-            text-align: center;
-            font-size: 5dvw;
-            color: $primary-color;
-        }
+      .text-1 {
+        font-size: 10dvw;
+      }
 
-        .text-2 {
-            text-align: center;
-            font-size: 1.75dvw;
-            color: $primary-color;
-        }
+      .text-2 {
+        font-size: 3dvw;
+      }
 
-        .text-3 {
-            text-align: center;
-            font-size: 1dvw;
-            color: $primary-color-light;
-        }
-
+      .text-3 {
+        font-size: 2dvw;
+      }
     }
 
     .second-paragraph,
     .third-paragraph,
     .fourth-paragraph {
-        display: flex;
-        flex-direction: row;
+      gap: 5em;
+      font-size: 1.5dvw;
+
+      .text {
         gap: 5em;
-        color: $primary-color;
-        font-weight: 400;
-        font-size: 1dvw;
+      }
 
-        .text {
-            align-self: center;
-            display: flex;
-            flex-direction: column;
-            gap: 5em;
-        }
-
-        .image {
-            align-self: center;
-            width: 45%;
-            border-radius: 15px;
-            border: 1px solid $primary-color;
-        }
+      .image {
+        width: 50%;
+        border-radius: 15px;
+      }
     }
-
-    .fourth-paragraph {
-        .final-text {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            font-weight: 600;
-
-            .large {
-                font-size: 1.25dvw;
-            }
-        }
-    }
-
-
+  }
 }
