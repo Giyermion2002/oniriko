@@ -10,7 +10,7 @@ body,
   width: 100dvw; // soportado en navegadores modernos -> ajusta en móviles
   height: 100vh; // fallback clásico para navegadores antiguos
   height: 100dvh; // soportado en navegadores modernos -> ajusta en móviles
-  font-family: 'Arsenica Trial', sans-serif !important;
+  font-family: 'Arsenica', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // Añadir padding para respetar las safe areas (ej: notch, barras)

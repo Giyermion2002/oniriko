@@ -6,7 +6,7 @@ import "./i18n";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "'Arsenica Trial', sans-serif",
+    fontFamily: "'Arsenica', sans-serif",
   },
 });
 
