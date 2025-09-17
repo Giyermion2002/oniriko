@@ -19,7 +19,6 @@ export default function Navbar({ classNames = {} }: NavbarProps) {
     { to: "/", label: t("header.navigation.home") },
     { to: "/menu", label: t("header.navigation.menu") },
     { to: "/products", label: t("header.navigation.products") },
-    { to: "/courses", label: t("header.navigation.courses") },
     { to: "/social", label: t("header.navigation.social") },
   ];
 
