@@ -1,7 +1,7 @@
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
-import { useTranslation } from "react-i18next";
 import { Link as RouterLink, useLocation } from "react-router-dom";
+import type { NavbarLink } from "../../types/types";
 import './Navbar.scss';
 
 interface NavbarProps {
@@ -9,18 +9,11 @@ interface NavbarProps {
     navbar?: string;
     link?: string;
   };
+  links: NavbarLink[];
 }
 
-export default function Navbar({ classNames = {} }: NavbarProps) {
-  const { t } = useTranslation();
+export const Navbar = ({ classNames = {}, links }: NavbarProps) => {
   const location = useLocation();
-
-  const links = [
-    { to: "/", label: t("header.navigation.home") },
-    { to: "/menu", label: t("header.navigation.menu") },
-    { to: "/products", label: t("header.navigation.products") },
-    { to: "/social", label: t("header.navigation.social") },
-  ];
 
   return (
     <Stack className={`navbar ${classNames.navbar ?? ''}`}>
