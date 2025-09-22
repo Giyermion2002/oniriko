@@ -4,7 +4,7 @@ import Image2 from "../../assets/images/home/image2.png";
 import Image3 from "../../assets/images/home/image3.png";
 import "./Home.scss";
 
-export const Home = () => {
+const Home = () => {
 
   const t = (i18nKey: string) => {
     return <Trans i18nKey={i18nKey} components={{ b: <b /> }} />
@@ -68,3 +68,5 @@ export const Home = () => {
     </div>
   );
 }
+
+export default Home;
