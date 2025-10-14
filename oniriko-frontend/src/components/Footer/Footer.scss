@@ -1,0 +1,129 @@
+@use "sass:color";
+@use '../../styles/colors.scss' as *;
+
+.footer {
+  padding: 2dvw 10dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+
+  .main-footer,
+  .copyright-footer {
+    font-family: "Montserrat", sans-serif;
+    // background-color: $app-background;
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+    color: $primary-color;
+  }
+
+  .main-footer {
+
+    .footer-principal,
+    .footer-contact,
+    .footer-hours,
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: max-content;
+      max-width: 20%;
+
+      .title {
+        padding-bottom: 2.5dvh;
+        font-weight: 600;
+      }
+
+      .content-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+
+        .logo {
+          align-self: center;
+        }
+
+        .logo:hover {
+          color: color.adjust($primary-color, $lightness: 15%);
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        align-self: center;
+      }
+    }
+
+    .footer-principal {
+      .title {
+        font-size: 1.5em;
+        font-family: 'Arsenica';
+      }
+
+      .content {
+        gap: 1.5em;
+      }
+
+      .logos {
+        display: flex;
+        flex-direction: row;
+        gap: 7.5%;
+
+        .icon {
+          color: $primary-color;
+          cursor: pointer;
+        }
+
+        .icon:hover {
+          color: color.adjust($primary-color, $lightness: 15%);
+        }
+      }
+    }
+
+    .footer-contact {
+      .content {
+        color: $primary-color;
+
+        .content-container {
+          cursor: pointer;
+
+          &:hover {
+            color: color.adjust($primary-color, $lightness: 15%);
+          }
+        }
+
+      }
+    }
+
+    .footer-links {
+      .links {
+        cursor: pointer;
+        text-decoration: none;
+        color: $primary-color
+      }
+
+      .links:hover {
+        color: color.adjust($primary-color, $lightness: 15%);
+      }
+    }
+  }
+
+  .copyright-footer {
+    border-top: 1px solid gray;
+    padding-top: 2em;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}

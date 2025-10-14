@@ -8,6 +8,27 @@
       "social": "Social Media"
     }
   },
+  "footer": {
+    "principal": {
+      "title": "ONÍRIKO",
+      "description": "A space where every cup is a journey and every visit is a way of coming home."
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "hours": {
+      "title": "Schedule",
+      "hours": {
+        "1": "Mon-Tue",
+        "2": "Thu-Sat",
+        "3": "Sun"
+      }
+    },
+    "links": {
+      "title": "Links"
+    },
+    "copyright": "ONÍRIKO. All rights reserved" 
+  },
   "home": {
     "first-paragraph": {
       "text-1": "ONÍRIKO",

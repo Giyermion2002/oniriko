@@ -1,5 +1,4 @@
 @use "../../styles/colors" as *;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .home-page {
   padding: 1em 20dvw 5em 20dvw;
@@ -25,7 +24,7 @@
     }
 
     .text-3 {
-      font-family: "Montserrat";
+      font-family: "Montserrat", sans-serif;
       text-align: center;
       font-size: 0.95dvw;
       color: $primary-color-light;
@@ -35,7 +34,7 @@
   .second-paragraph,
   .third-paragraph,
   .fourth-paragraph {
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: row;
     gap: 5em;

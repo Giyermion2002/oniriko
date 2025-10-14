@@ -8,6 +8,27 @@
       "social": "Redes sociales"
     }
   },
+  "footer": {
+    "principal": {
+      "title": "ONÍRIKO",
+      "description": "Un espacio donde cada taza es un viaje y cada visita es una forma de volver a casa."
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "hours": {
+      "title": "Horarios",
+      "hours": {
+        "1": "Lun-Mar",
+        "2": "Jue-Sab",
+        "3": "Dom"
+      }
+    },
+    "links": {
+      "title": "Enlaces"
+    },
+    "copyright": "ONÍRIKO. Todos los derechos reservados"
+  },
   "home": {
     "first-paragraph": {
       "text-1": "ONÍRIKO",

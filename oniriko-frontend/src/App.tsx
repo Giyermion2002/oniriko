@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.scss";
 import backgroundVideo from "./assets/videos/background.mp4";
 import { Header } from "./components/Header/Header";
 import type { AppPage } from "./types/types";
+import { Footer } from "./components/Footer/Footer";
 
 const Home = React.lazy(() => import("./pages/Home/Home"));
 const Menu = React.lazy(() => import("./pages/Menu"));
@@ -14,6 +15,11 @@ const Social = React.lazy(() => import("./pages/Social"));
 export const App = () => {
 
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
 
   const pages: AppPage[] = [
     {
@@ -63,6 +69,7 @@ export const App = () => {
           ))}
         </Routes>
       </div>
+      <Footer links={pages.map(page => page.navbarLink)} />
     </div>
   );
 }
