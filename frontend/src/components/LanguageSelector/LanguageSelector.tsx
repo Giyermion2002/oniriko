@@ -1,12 +1,12 @@
 import { MenuItem, Select, type SelectChangeEvent } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import EnglishFlag from "../../assets/images/EnglishFlag.svg";
-import SpanishFlag from "../../assets/images/SpanishFlag.svg";
-import NorwegianFlag from "../../assets/images/NorwegianFlag.svg";
-import FrenchFlag from "../../assets/images/FrenchFlag.svg";
-import GermanFlag from "../../assets/images/GermanFlag.svg";
-import ItalianFlag from "../../assets/images/ItalianFlag.svg";
-import PortugueseFlag from "../../assets/images/PortugueseFlag.svg";
+import EnglishFlag from "../../assets/images/flags/EnglishFlag.svg";
+import SpanishFlag from "../../assets/images/flags/SpanishFlag.svg";
+import NorwegianFlag from "../../assets/images/flags/NorwegianFlag.svg";
+import FrenchFlag from "../../assets/images/flags/FrenchFlag.svg";
+import GermanFlag from "../../assets/images/flags/GermanFlag.svg";
+import ItalianFlag from "../../assets/images/flags/ItalianFlag.svg";
+import PortugueseFlag from "../../assets/images/flags/PortugueseFlag.svg";
 import './LanguageSelector.scss';
 
 const languages = [
@@ -49,9 +49,9 @@ export const LanguageSelector = ({ className = "", compact }: LanguageSelectorPr
       }}
     >
       {languages.map((lang) => (
-        <MenuItem 
-          key={lang.code} 
-          value={lang.code} 
+        <MenuItem
+          key={lang.code}
+          value={lang.code}
           className={`language-selector-item ${compact ? 'compact-item' : ''}`}
         >
           <img
