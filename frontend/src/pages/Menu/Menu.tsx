@@ -111,10 +111,22 @@ const Menu = () => {
       <h1>{t("menu.title")}</h1>
       <p>{t("menu.description")}</p>
 
-      <div className="menu-items">
-        {menuItems.map((item) => (
-          <MenuCard key={item.category} category={item.category} items={item.items} />
-        ))}
+      <div className="menu-grid">
+        <div className="menu-col">
+          {menuItems.filter((_, i) => i % 3 === 0).map((item) => (
+            <MenuCard key={item.category} category={item.category} items={item.items} />
+          ))}
+        </div>
+        <div className="menu-col">
+          {menuItems.filter((_, i) => i % 3 === 1).map((item) => (
+            <MenuCard key={item.category} category={item.category} items={item.items} />
+          ))}
+        </div>
+        <div className="menu-col">
+          {menuItems.filter((_, i) => i % 3 === 2).map((item) => (
+            <MenuCard key={item.category} category={item.category} items={item.items} />
+          ))}
+        </div>
       </div>
     </div>
   );

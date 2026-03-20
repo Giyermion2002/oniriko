@@ -1,9 +1,7 @@
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardHeader from "@mui/material/CardHeader";
-import Divider from "@mui/material/Divider";
-import Typography from "@mui/material/Typography";
+import { useState } from "react";
+import { Box, Typography, IconButton, Collapse } from "@mui/material";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import type { MenuItem } from "../../types/types";
 import "./MenuCard.scss";
 
@@ -13,36 +11,46 @@ interface MenuCardProps {
 }
 
 export const MenuCard = ({ category, items }: MenuCardProps) => {
+  const [expanded, setExpanded] = useState(true);
+
   return (
-    <Card className="menu-card" variant="outlined">
-      <CardHeader
-        title={
-          <Typography variant="h5" className="menu-card-title">
-            {category}
-          </Typography>
-        }
-        className="menu-card-header"
-      />
-      <CardContent className="menu-card-content">
-        {items.map((item, index) => (
-          <Box key={item.name}>
-            <div className="menu-card-item">
-              <div className="menu-card-item-info">
+    <Box className="menu-card">
+      <Box className="menu-card-header-wrapper">
+        <Typography variant="h5" className="menu-card-title">
+          {category}
+        </Typography>
+        <IconButton
+          className="menu-card-expand-btn"
+          onClick={() => setExpanded(!expanded)}
+          aria-label="Toggle category"
+        >
+          {expanded ? <ExpandLessIcon fontSize="large" /> : <ExpandMoreIcon fontSize="large" />}
+        </IconButton>
+      </Box>
+
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <Box className="menu-card-content">
+          {items.map((item) => (
+            <Box key={item.name} className="menu-card-item">
+              <Box className="menu-card-item-header">
                 <Typography variant="subtitle1" className="menu-card-item-name">
                   {item.name}
                 </Typography>
-                <Typography variant="body2" className="menu-card-item-desc">
-                  {item.description}
+
+                <Box className="menu-card-item-dots" />
+
+                <Typography variant="subtitle1" className="menu-card-item-price">
+                  {item.price}
                 </Typography>
-              </div>
-              <Typography variant="subtitle1" className="menu-card-item-price">
-                {item.price}
+              </Box>
+
+              <Typography variant="body2" className="menu-card-item-desc">
+                {item.description}
               </Typography>
-            </div>
-            {index < items.length - 1 && <Divider className="menu-card-divider" />}
-          </Box>
-        ))}
-      </CardContent>
-    </Card>
+            </Box>
+          ))}
+        </Box>
+      </Collapse>
+    </Box>
   );
 };

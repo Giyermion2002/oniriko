@@ -1,63 +1,91 @@
 @use "../../styles/colors.scss" as *;
 
 .menu-card {
-  background-color: rgba(255, 255, 255, 0.95) !important;
-  border: 1px solid $primary-color !important;
-  border-radius: 10px !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
-  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-  margin: 1.5rem 0;
+  margin-bottom: 3rem;
+  margin-left: max(0.25rem, 1vw);
+  margin-right: max(0.25rem, 1vw);
+  width: auto;
+  min-width: min(100%, 380px);
+  break-inside: avoid;
+  display: inline-block;
+  background-color: rgba(235, 222, 210, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  &-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.25rem;
   }
 
-  &-header {
-    padding: 0.75rem 1.5rem;
+  &-expand-btn {
+    color: #c89f72 !important;
+    margin-top: -0.2rem !important;
   }
 
   &-title {
-    color: $primary-color-dark;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color-dark, #2c2c2c);
+    border-bottom: 3px solid #c89f72;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.4rem;
   }
 
   &-content {
-    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
   }
 
   &-item {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0.75rem 0;
-  }
+    flex-direction: column;
 
-  &-item-info {
-    flex: 1;
-    padding-right: 1rem;
-  }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 100%;
+    }
 
-  &-item-name {
-    font-weight: 600;
-    color: $primary-color-dark;
-    margin-bottom: 0.2rem;
-  }
+    &-name {
+      font-family: "Playfair Display", serif !important;
+      font-weight: 600 !important;
+      color: #222 !important;
+      font-size: 1.25rem !important;
+      letter-spacing: 0.5px !important;
+    }
 
-  &-item-desc {
-    color: darken($primary-color, 20%);
-  }
+    &-dots {
+      flex-grow: 1;
+      border-bottom: 2px dotted #bbb;
+      margin: 0 2.5rem;
+      position: relative;
+      top: -4px;
+    }
 
-  &-item-price {
-    font-weight: 700;
-    color: $primary-color-dark;
-    white-space: nowrap;
-    font-family: sans-serif !important;
-  }
+    &-price {
+      font-family: "Playfair Display", serif !important;
+      font-weight: 700 !important;
+      color: #000 !important;
+      font-size: 1.25rem !important;
+    }
 
-  &-divider {
-    margin: 0.5rem 0;
-    border-color: lighten($primary-color, 30%);
+    &-desc {
+      font-family: "Inter", sans-serif !important;
+      color: #666 !important;
+      font-weight: 300 !important;
+      font-size: 0.95rem !important;
+      margin-top: 0.2rem !important;
+    }
   }
 }

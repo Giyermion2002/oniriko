@@ -1,7 +1,17 @@
-.menu-items {
+.menu-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 3rem;
   margin-top: 3rem;
   padding: 0 2rem;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.menu-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
