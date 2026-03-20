@@ -57,7 +57,14 @@
   },
   "menu": {
     "title": "Página de menú",
-    "description": "Esta es la página de menú de la aplicación."
+    "description": "Esta es la página de menú de la aplicación.",
+    "card": {
+      "recommended": "Recomendado",
+      "viewPhoto": "Ver fotografía",
+      "photoAlt": "Fotografía del producto",
+      "errorTitle": "Imagen no disponible",
+      "errorDesc": "La fotografía para este producto aún no se ha subido."
+    }
   },
   "products": {
     "title": "Página de productos",

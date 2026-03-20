@@ -13,6 +13,7 @@ export interface MenuItem {
   description: string;
   price: string;
   favourite?: boolean;
+  hasPhoto?: boolean;
 }
 
 export interface MenuCategory {

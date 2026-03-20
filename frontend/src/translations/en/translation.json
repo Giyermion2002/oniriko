@@ -57,7 +57,14 @@
   },
   "menu": {
     "title": "Menu Page",
-    "description": "This is the menu page of the application."
+    "description": "This is the menu page of the application.",
+    "card": {
+      "recommended": "Recommended",
+      "viewPhoto": "View photo",
+      "photoAlt": "Product photo",
+      "errorTitle": "Image not available",
+      "errorDesc": "The photo for this product has not been uploaded yet."
+    }
   },
   "products": {
     "title": "Products Page",

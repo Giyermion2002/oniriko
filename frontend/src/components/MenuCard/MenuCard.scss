@@ -73,6 +73,37 @@
       color: $text-dark !important;
       font-size: 1.25rem !important;
       letter-spacing: 0.5px !important;
+
+      .menu-card-item-favourite {
+        color: $menu-card-accent;
+        margin-left: 0.4rem;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+
+        svg {
+          font-size: 1.15rem;
+        }
+      }
+
+      .menu-card-item-camera {
+        color: $text-muted;
+        margin-left: 0.4rem;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+        cursor: pointer;
+        transition: color 0.2s ease, transform 0.2s ease;
+
+        &:hover {
+          color: $menu-card-accent;
+          transform: scale(1.1);
+        }
+
+        svg {
+          font-size: 1.15rem;
+        }
+      }
     }
 
     &-dots {
@@ -100,6 +131,54 @@
       font-weight: 300 !important;
       font-size: 0.95rem !important;
       margin-top: 0.2rem !important;
+    }
+  }
+}
+
+/* Modal UI aislada del componente base para el Render del Portal de diálogo de React */
+
+.menu-card-photo-modal-paper {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+.menu-card-photo-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: zoom-out;
+
+  img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 20px 50px $modal-shadow;
+    border: 2px solid $modal-border;
+  }
+
+  .menu-card-photo-error {
+    background-color: $app-background;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 20px 50px $modal-shadow;
+    border: 1px solid $modal-border;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .error-title {
+      font-family: "Playfair Display", serif !important;
+      font-weight: 600 !important;
+      color: $primary-color !important;
+    }
+
+    .error-desc {
+      font-family: "Inter", sans-serif !important;
+      color: $text-dark !important;
     }
   }
 }
