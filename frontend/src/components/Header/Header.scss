@@ -16,10 +16,10 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
   .header-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-family: 'Arsenica', serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     margin: 0;
     width: auto;
     color: $primary-color;
@@ -83,22 +83,81 @@
     }
   }
 
+  /* Estilos del nuevo Drawer Móvil */
+  .navbar-drawer-modal {
+    background: rgba($header-background, 0.8) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: $primary-color;
+  }
+
   .mobile-drawer {
-    width: 250px;
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
 
-    .navbar {
-      flex-direction: column !important;
-      align-items: flex-start;
+    .drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
 
-      .nav-link {
-        margin: 0.5em 0;
+      .drawer-brand {
+        font-family: 'Arsenica', serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $primary-color;
+      }
+    }
+
+    .drawer-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+
+      .drawer-nav-item {
+        align-items: center;
+        width: 100%;
+
+        .nav-link {
+          font-family: 'Arsenica', serif;
+          font-size: 2.5rem;
+          font-weight: 600;
+          color: $primary-color;
+          margin: 0;
+          text-align: center;
+          width: 100%;
+          
+          &::after {
+            display: none; // No underline in drawer for cleaner look
+          }
+        }
+      }
+    }
+
+    .drawer-footer {
+      border-top: 1px solid rgba($primary-color, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
       }
 
-      .navbar-drawer-modal {
-        background-color: $header-background;
+      .drawer-note {
+        display: block;
+        opacity: 0.6;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
       }
     }
   }
-
 }
