@@ -52,12 +52,14 @@ const Gallery = () => {
         onClose={() => setSelectedImg(null)}
         className="gallery-lightbox"
         PaperProps={{
+          onClick: () => setSelectedImg(null),
           sx: {
             backgroundColor: 'rgba(0, 0, 0, 0.9)',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            position: 'relative'
+            position: 'relative',
+            cursor: 'zoom-out'
           }
         }}
       >
@@ -77,8 +79,9 @@ const Gallery = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
+              onClick={(e) => e.stopPropagation()}
               className="lightbox-image"
-              style={{ maxWidth: '95%', maxHeight: '95%', objectFit: 'contain' }}
+              style={{ maxWidth: '95%', maxHeight: '95%', objectFit: 'contain', cursor: 'default' }}
             />
           )}
         </AnimatePresence>
