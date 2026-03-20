@@ -75,36 +75,43 @@
 /* 📱 Responsive */
 @media (max-width: 1024px) {
   .home-page {
-    padding: 1em 5dvw 5em 5dvw;
+    padding: 1rem 5dvw 5rem 5dvw;
     gap: 3.75em;
+
     .first-paragraph {
       gap: .75em;
 
       .text-1 {
-        font-size: 15dvw;
+        font-size: 10dvw;
       }
 
       .text-2 {
-        font-size: 4dvw;
+        font-size: 5dvw;
       }
 
       .text-3 {
-        font-size: 2.5dvw;
+        font-size: 3.5dvw;
       }
     }
 
     .second-paragraph,
     .third-paragraph,
     .fourth-paragraph {
-      gap: 2em;
-      font-size: 2dvw;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 2rem;
+      font-size: 4dvw;
 
       .text {
         gap: 2em;
+        align-items: center;
       }
 
       .image {
-        width: 50%;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
         border-radius: 15px;
       }
     }

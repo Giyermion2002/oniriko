@@ -29,7 +29,8 @@
   .header {
     justify-content: space-between;
     padding: 0 1rem;
-    height: 30dvh;
+    height: 10dvh;
+    min-height: 60px;
 
     .desktop {
       display: none; // navbar y selector de idioma de modo desktop ocultos

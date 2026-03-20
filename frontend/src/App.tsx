@@ -18,7 +18,12 @@ export const App = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const scrollArea = document.getElementById("main-scroll-area");
+    if (scrollArea) {
+      scrollArea.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Fallback de seguridad
+    }
   }, [pathname]);
 
   const pages: AppPage[] = [
@@ -62,14 +67,17 @@ export const App = () => {
         title={t("header.title")}
         navbarLinks={pages.map(page => page.navbarLink)}
       />
-      <div className={"app-container"}>
-        <Routes>
-          {pages.map(page => (
-            <Route path={page.navbarLink.to} element={page.element} />
-          ))}
-        </Routes>
+
+      <div className="main-scroll-area" id="main-scroll-area">
+        <div className={"app-container"}>
+          <Routes>
+            {pages.map((page, idx) => (
+              <Route key={idx} path={page.navbarLink.to} element={page.element} />
+            ))}
+          </Routes>
+        </div>
+        <Footer links={pages.map(page => page.navbarLink)} />
       </div>
-      <Footer links={pages.map(page => page.navbarLink)} />
     </div>
   );
 }

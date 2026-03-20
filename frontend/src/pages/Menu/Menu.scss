@@ -1,13 +1,19 @@
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 3rem;
-  margin-top: 3rem;
-  padding: 0 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 1.5rem;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   align-items: flex-start;
+
+  @media (min-width: 768px) {
+    gap: 3rem;
+    margin-top: 3rem;
+    padding: 0 2rem;
+  }
 }
 
 .menu-col {

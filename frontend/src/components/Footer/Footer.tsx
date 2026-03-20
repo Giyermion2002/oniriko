@@ -75,7 +75,10 @@ export const Footer = ({ links }: FooterProps) => {
                 to={link.to}
                 underline="none"
                 component={RouterLink}
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                onClick={() => {
+                  const scrollBox = document.getElementById("main-scroll-area");
+                  if (scrollBox) scrollBox.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
               >
                 {link.label}
               </Link>
