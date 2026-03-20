@@ -28,12 +28,12 @@ services:
     networks:
       - net
 
-  oniriko-frontend:
+  frontend:
     build:
-      context: ../oniriko-frontend
-      dockerfile: ../oniriko-frontend/Dockerfile
-    image: oniriko-frontend:${IMAGE_VERSION}
-    container_name: oniriko-frontend
+      context: ../frontend
+      dockerfile: ../frontend/Dockerfile
+    image: frontend:${IMAGE_VERSION}
+    container_name: frontend
     restart: always
     ports:
       - "80:80"
