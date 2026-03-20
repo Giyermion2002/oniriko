@@ -108,6 +108,15 @@
         }
       }
 
+      .menu-card-item-allergen {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: $menu-card-accent;
+        margin-left: 0.3rem;
+        font-family: 'Inter', sans-serif;
+        vertical-align: middle;
+      }
+
       .menu-card-item-camera {
         color: $text-muted;
         margin-left: 0.4rem;

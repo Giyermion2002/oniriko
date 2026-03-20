@@ -1,8 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { MenuCard } from "../../components/MenuCard/MenuCard";
-import type { MenuCategory } from "../../types/types";
+import type { MenuCategory, AllergenTag } from "../../types/types";
 import './Menu.scss';
+
+const ALLERGEN_TAGS: AllergenTag[] = ['VE', 'VG', 'GF', 'SA'];
 
 const menuItems: MenuCategory[] = [
   {
@@ -47,12 +49,12 @@ const menuItems: MenuCategory[] = [
     items: [
       { name: "Voghera", description: "(Burrata, mortadela, aceite de oliva virgen infusionado con albahaca y pistachos)", price: "6.50€", favourite: true },
       { name: "El zoñar", description: "(Tomate, aceite de oliva virgen y jamón ibérico)", price: "6.50€" },
-      { name: "Zakopane (VG)", description: "(Mantequilla de pasto y mermelada de frutos del bosque)", price: "3.50€" },
-      { name: "Avellana dukkah (VG)", description: "(Crema de avellanas, miel cruda asturiana y dukkah)", price: "6.50€", favourite: true },
-      { name: "Avocado (VG)", description: "(Aguacate, queso feta, tomate seco y aceite de oliva virgen)", price: "6.50€" },
-      { name: "Bulnes (VG)", description: "(Queso ricotta, miel, compota de manzana y nueces)", price: "6.00€" },
-      { name: "PB jelly (VE)", description: "(Crema de cacahuete y mermelada de fresa)", price: "4.00€" },
-      { name: "Sandwich de queso al grill (VG)", description: "(Queso gouda y emmental en pan de masa madre)", price: "5.00€" },
+      { name: "Zakopane", allergens: ["VG"], description: "(Mantequilla de pasto y mermelada de frutos del bosque)", price: "3.50€" },
+      { name: "Avellana dukkah", allergens: ["VG"], description: "(Crema de avellanas, miel cruda asturiana y dukkah)", price: "6.50€", favourite: true },
+      { name: "Avocado", allergens: ["VG"], description: "(Aguacate, queso feta, tomate seco y aceite de oliva virgen)", price: "6.50€" },
+      { name: "Bulnes", allergens: ["VG"], description: "(Queso ricotta, miel, compota de manzana y nueces)", price: "6.00€" },
+      { name: "PB jelly", allergens: ["VE"], description: "(Crema de cacahuete y mermelada de fresa)", price: "4.00€" },
+      { name: "Sandwich de queso al grill", allergens: ["VG"], description: "(Queso gouda y emmental en pan de masa madre)", price: "5.00€" },
       { name: "Tostada del mes", description: "Pregunta a nuestro personal por la tostada del mes", price: "7.50€" },
       { name: "Opción pan sin gluten", description: "Sustitución en tostadas por pan de trigo sarraceno ECO", price: "+ 1.00€" },
     ],
@@ -60,9 +62,9 @@ const menuItems: MenuCategory[] = [
   {
     name: "BOWLS",
     items: [
-      { name: "Açai bowl (VE, GF, SA)", description: "(Banana, açai, frutos del bosque, granola keto sin gluten, crema de almendra, frutas de temporada)", price: "8.00€" },
-      { name: "Oníriko cacao bowl (VE, GF, SA)", description: "(Banana, leche de coco, cacao puro, peanut butter, almendras, nibs de cacao, granola keto sin gluten)", price: "8.00€" },
-      { name: "Yogurt bowl (VG, GF, SA)", description: "(Yogurt, frutos de temporada, granola keto sin gluten, peanut butter)", price: "5.50€" },
+      { name: "Açai bowl", allergens: ["VE", "GF", "SA"], description: "(Banana, açai, frutos del bosque, granola keto sin gluten, crema de almendra, frutas de temporada)", price: "8.00€" },
+      { name: "Oníriko cacao bowl", allergens: ["VE", "GF", "SA"], description: "(Banana, leche de coco, cacao puro, peanut butter, almendras, nibs de cacao, granola keto sin gluten)", price: "8.00€" },
+      { name: "Yogurt bowl", allergens: ["VG", "GF", "SA"], description: "(Yogurt, frutos de temporada, granola keto sin gluten, peanut butter)", price: "5.50€" },
     ],
   },
   {
@@ -116,10 +118,11 @@ const Menu = () => {
 
         <Box className="menu-info-container">
           <Box className="menu-legend">
-            <span className="legend-item"><strong>(VE)</strong> {t("menu.legend.ve")}</span>
-            <span className="legend-item"><strong>(VG)</strong> {t("menu.legend.vg")}</span>
-            <span className="legend-item"><strong>(GF)</strong> {t("menu.legend.gf")}</span>
-            <span className="legend-item"><strong>(SA)</strong> {t("menu.legend.sa")}</span>
+            {ALLERGEN_TAGS.map((tag) => (
+              <span key={tag} className="legend-item">
+                <strong>({tag})</strong> {t(`menu.legend.${tag}`)}
+              </span>
+            ))}
           </Box>
           <Typography variant="body2" className="menu-notice">
             {t("menu.notice")}

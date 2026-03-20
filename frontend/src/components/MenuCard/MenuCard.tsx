@@ -73,6 +73,11 @@ export const MenuCard = ({ name, price, description, items }: MenuCardProps) => 
               <Box className="menu-card-item-header">
                 <Typography variant="subtitle1" className="menu-card-item-name">
                   {item.name}
+                  {item.allergens?.map((tag) => (
+                    <span key={tag} className="menu-card-item-allergen">
+                      ({tag})
+                    </span>
+                  ))}
                   {item.hasPhoto && (
                     <span
                       className="menu-card-item-camera"

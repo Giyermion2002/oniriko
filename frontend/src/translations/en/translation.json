@@ -60,10 +60,10 @@
     "subtitle": "A sensory journey through specialty coffee and conscious cuisine.",
     "notice": "Ask our staff for our intolerance menu and vegan adaptations.",
     "legend": {
-      "ve": "Vegan",
-      "vg": "Vegetarian",
-      "gf": "Gluten free",
-      "sa": "Sugar free"
+      "VE": "Vegan",
+      "VG": "Vegetarian",
+      "GF": "Gluten free",
+      "SA": "Sugar free"
     },
     "card": {
       "recommended": "Recommended",

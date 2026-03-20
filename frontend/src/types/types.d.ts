@@ -8,12 +8,15 @@ export interface AppPage {
   navbarLink: NavbarLink;
 }
 
+export type AllergenTag = 'VE' | 'VG' | 'GF' | 'SA';
+
 export interface MenuItem {
   name: string;
   description: string;
   price?: string;
   favourite?: boolean;
   hasPhoto?: boolean;
+  allergens?: AllergenTag[];
 }
 
 export interface MenuCategory {

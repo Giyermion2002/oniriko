@@ -60,10 +60,10 @@
     "subtitle": "Un viaje sensorial a través del café de especialidad y la cocina consciente.",
     "notice": "Pregunta a nuestro personal por nuestra carta de intolerancias y por adaptaciones veganas.",
     "legend": {
-      "ve": "Vegano",
-      "vg": "Vegetariano",
-      "gf": "Sin gluten",
-      "sa": "Sin azúcar"
+      "VE": "Vegano",
+      "VG": "Vegetariano",
+      "GF": "Sin gluten",
+      "SA": "Sin azúcar"
     },
     "card": {
       "recommended": "Recomendado",
