@@ -12,7 +12,7 @@ export interface GalleryImage {
 }
 
 // Convertimos el objeto de módulos en un array compatible con el componente Gallery
-export const galleryImages: GalleryImage[] = Object.entries(imageModules).map(([path, url], index) => {
+export const galleryImages: GalleryImage[] = Object.entries(imageModules).map(([_path, url], index) => {
   return {
     id: index + 1,
     url: url as string
