@@ -2,11 +2,13 @@ import { MenuItem, Select, type SelectChangeEvent } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import EnglishFlag from "../../assets/images/EnglishFlag.svg";
 import SpanishFlag from "../../assets/images/SpanishFlag.svg";
+import NorwegianFlag from "../../assets/images/NorwegianFlag.svg";
 import './LanguageSelector.scss';
 
 const languages = [
   { code: "es", label: "Español", flag: SpanishFlag },
   { code: "en", label: "English", flag: EnglishFlag },
+  { code: "no", label: "Norsk", flag: NorwegianFlag },
 ];
 
 interface LanguageSelectorProps {
