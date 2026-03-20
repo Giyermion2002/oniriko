@@ -10,7 +10,7 @@
     color: $header-nav-color;
 
     &:focus-visible {
-      border:none
+      border: none
     }
   }
 
@@ -18,9 +18,38 @@
     border-radius: 8px;
     border: 1.5px solid $header-nav-color;
   }
+
+  &.compact {
+    min-width: 4.5rem;
+    width: auto;
+
+    .MuiSelect-icon {
+      position: absolute;
+      right: -0.10rem;
+      display: block;
+    }
+
+    .MuiSelect-select {
+      justify-content: center;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      display: flex;
+      align-items: center;
+    }
+
+    .language-selector-item-flag {
+      margin-right: 0;
+    }
+  }
 }
 
 .language-selector-menu {
+
+  // Estilos para el contenedor de la lista desplegable
+  &.MuiPaper-root {
+    min-width: 4rem !important;
+    background-color: $header-background;
+  }
 
   .MuiMenu-list {
     background-color: $header-background;
@@ -28,6 +57,14 @@
     .language-selector-item {
       display: flex;
       align-items: center;
+
+      &.compact-item {
+        justify-content: center;
+
+        .language-selector-item-flag {
+          margin-right: 0;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,83 @@
+{
+  "header": {
+    "title": "Café de Spécialité ONÍRIKO",
+    "navigation": {
+      "home": "Accueil",
+      "menu": "Menu",
+      "products": "Produits",
+      "social": "Réseaux Sociaux"
+    }
+  },
+  "footer": {
+    "principal": {
+      "title": "ONÍRIKO",
+      "description": "Un espace où chaque tasse est un voyage et chaque visite est une façon de rentrer à la maison."
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "hours": {
+      "title": "Horaires",
+      "hours": {
+        "1": "Lun-Mar",
+        "2": "Jeu-Sam",
+        "3": "Dim"
+      }
+    },
+    "links": {
+      "title": "Liens"
+    },
+    "copyright": "ONÍRIKO. Tous droits réservés"
+  },
+  "home": {
+    "first-paragraph": {
+      "text-1": "ONÍRIKO",
+      "text-2": "Un changement qui va bien au-delà d'un simple mot.",
+      "text-3": "Oníriko vient d'« onirique », qui appartient au monde des rêves... et c'est exactement ce que nous vivons ici, chaque jour."
+    },
+    "second-paragraph": {
+      "text-1": "Que nous <b>rêvons éveillés</b>.",
+      "text-2": "Que chaque tasse est un <b>voyage</b>.",
+      "text-3": "Que chaque visite est une façon de <b>revenir à la maison</b>.",
+      "text-4": "Ce nouveau nom reflète ce que nous sommes : <b>rêveurs, voyageurs et créateurs de foyer</b> dans chaque coin de notre café.",
+      "text-5": "Nous nous sentons libres, excités et profondément reconnaissants de partager ce voyage avec vous.",
+      "text-6": "Merci de faire partie d'une histoire qui continue de grandir, plus forte que jamais."
+    },
+    "third-paragraph": {
+      "text-1": "La marque que vous voyez ici n'est pas seulement un design : elle reflète qui nous sommes et qui nous aspirons à être. Chaque voyage, chaque personne, chaque moment a laissé une trace dans notre identité.",
+      "text-2": "Pendant des années, j'ai vécu avec une valise à la main, découvrant des saveurs, des conversations, de la musique et des coins que je n'avais jamás imaginés. Et c'est au cours de ce voyage que j'ai compris que l'identité n'est pas statique : elle se construit en chemin, par l'échange avec les autres et par la curiosité pour l'inconnu.",
+      "text-3": "Apprendre de différentes cultures, grandir à chaque pas et expérimenter la nouveauté m'a appris qu'à la fin, la chose la plus précieuse est de trouver sa propre place dans le monde."
+    },
+    "fourth-paragraph": {
+      "text-1": "C'est ainsi qu'est né <b>ONÍRIKO</b> : un espace qui rassemble toutes ces marques. Un lieu où chaque visiteur laisse son histoire et, en même temps, emporte un petit morceau du foyer que nous avons construit ensemble.",
+      "text-2": "Aujourd'hui, ONÍRIKO est ce point de rencontre où chaque tasse, chaque coin et chaque sourire reflète un peu de mon voyage et un peu de votre histoire. Ici, nous célébrons la diversité des traces, la quête constante et la valeur infinie de grandir tout en se sentant entier.",
+      "text-3": "Bienvenue dans un espace où l'identité se ressent, se découvre et se partage,",
+      "text-4": "Bienvenue chez ONÍRIKO."
+    }
+  },
+  "menu": {
+    "title": "Notre Carte",
+    "notice": "Demandez à notre personnel notre carte des intolérances et les adaptations végétaliennes.",
+    "legend": {
+      "VE": "Végétalien",
+      "VG": "Végétarien",
+      "GF": "Sans gluten",
+      "SA": "Sans sucre"
+    },
+    "card": {
+      "recommended": "Recommandé",
+      "viewPhoto": "Voir la photo",
+      "photoAlt": "Photo du produit",
+      "errorTitle": "Image non disponible",
+      "errorDesc": "La photo de ce produit n'a pas encore été mise en ligne."
+    }
+  },
+  "products": {
+    "title": "Page Produits",
+    "description": "Ceci est la page des produits de l'application."
+  },
+  "social": {
+    "title": "Page Réseaux Sociaux",
+    "description": "Ceci est la page des réseaux sociaux de l'application."
+  }
+}

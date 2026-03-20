@@ -4,11 +4,19 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import es from "./translations/es/translation.json";
 import en from "./translations/en/translation.json";
 import no from "./translations/no/translation.json";
+import fr from "./translations/fr/translation.json";
+import de from "./translations/de/translation.json";
+import it from "./translations/it/translation.json";
+import pt from "./translations/pt/translation.json";
 
 const resources = {
   es: { translation: es },
   en: { translation: en },
   no: { translation: no },
+  fr: { translation: fr },
+  de: { translation: de },
+  it: { translation: it },
+  pt: { translation: pt },
 };
 
 i18n

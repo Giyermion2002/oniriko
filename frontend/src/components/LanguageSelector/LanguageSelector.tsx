@@ -3,13 +3,21 @@ import { useTranslation } from "react-i18next";
 import EnglishFlag from "../../assets/images/EnglishFlag.svg";
 import SpanishFlag from "../../assets/images/SpanishFlag.svg";
 import NorwegianFlag from "../../assets/images/NorwegianFlag.svg";
+import FrenchFlag from "../../assets/images/FrenchFlag.svg";
+import GermanFlag from "../../assets/images/GermanFlag.svg";
+import ItalianFlag from "../../assets/images/ItalianFlag.svg";
+import PortugueseFlag from "../../assets/images/PortugueseFlag.svg";
 import './LanguageSelector.scss';
 
 const languages = [
   { code: "es", label: "Español", flag: SpanishFlag },
   { code: "en", label: "English", flag: EnglishFlag },
   { code: "no", label: "Norsk", flag: NorwegianFlag },
-];
+  { code: "fr", label: "Français", flag: FrenchFlag },
+  { code: "de", label: "Deutsch", flag: GermanFlag },
+  { code: "it", label: "Italiano", flag: ItalianFlag },
+  { code: "pt", label: "Português", flag: PortugueseFlag },
+].sort((a, b) => a.label.localeCompare(b.label));
 
 interface LanguageSelectorProps {
   className?: string;
@@ -33,7 +41,7 @@ export const LanguageSelector = ({ className = "", compact }: LanguageSelectorPr
       onChange={handleChange}
       variant="outlined"
       size="small"
-      className={`language-selector ${className ?? ""}`}
+      className={`language-selector ${className ?? ""} ${compact ? 'compact' : ''}`}
       MenuProps={{
         PaperProps: {
           className: 'language-selector-menu',
@@ -41,7 +49,11 @@ export const LanguageSelector = ({ className = "", compact }: LanguageSelectorPr
       }}
     >
       {languages.map((lang) => (
-        <MenuItem key={lang.code} value={lang.code} className="language-selector-item">
+        <MenuItem 
+          key={lang.code} 
+          value={lang.code} 
+          className={`language-selector-item ${compact ? 'compact-item' : ''}`}
+        >
           <img
             className="language-selector-item-flag"
             src={lang.flag}
