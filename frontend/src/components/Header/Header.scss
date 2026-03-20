@@ -5,18 +5,37 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0.5rem 2rem;
+  min-height: 80px;
+  transition: all 0.3s ease-in-out;
+  
+  // Efecto Glassmorphism
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba($primary-color, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
   .header-title {
-    font-size: 24px;
-    font-weight: 500;
-    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin: 0;
-    width: 15dvw;
+    width: auto;
     color: $primary-color;
+    white-space: nowrap;
   }
 
   .header-navbar {
-    width: 65dvw;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+  }
+
+  .header-language-selector {
+    width: auto;
+    min-width: unset;
   }
 
   .mobile {

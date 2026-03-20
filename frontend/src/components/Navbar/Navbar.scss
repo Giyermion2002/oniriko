@@ -7,14 +7,20 @@
     padding: 1em;
 
     .nav-link {
-        color: $header-nav-color;
+        color: rgba($header-nav-color, 0.85);
         font-weight: 500;
-        font-size: 1.20em;
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
         position: relative;
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
-        margin-bottom: 3px;
+        margin: 0 1rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $header-nav-color;
+        }
 
         &::after {
             content: '';
