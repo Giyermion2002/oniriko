@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.scss";
-import backgroundVideo from "./assets/videos/background.mp4";
+import backgroundVideo from "./assets/videos/videoplayback.mp4";
 import { Header } from "./components/Header/Header";
 import type { AppPage } from "./types/types";
 import { Footer } from "./components/Footer/Footer";
 
 const Home = React.lazy(() => import("./pages/Home/Home"));
-const Menu = React.lazy(() => import("./pages/Menu"));
+const Menu = React.lazy(() => import("./pages/Menu/Menu"));
 const Products = React.lazy(() => import("./pages/Products"));
 const Social = React.lazy(() => import("./pages/Social"));
 

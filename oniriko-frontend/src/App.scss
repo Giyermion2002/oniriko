@@ -35,6 +35,7 @@ body,
       background-color: $header-background;
       position: sticky;
       top: 0;
+      z-index: 9999;
 
       .header-title {
         color: $primary-color;
