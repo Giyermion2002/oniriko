@@ -27,7 +27,7 @@
     "links": {
       "title": "Links"
     },
-    "copyright": "ONÍRIKO. All rights reserved" 
+    "copyright": "ONÍRIKO. All rights reserved"
   },
   "home": {
     "first-paragraph": {
@@ -56,8 +56,15 @@
     }
   },
   "menu": {
-    "title": "Menu Page",
-    "description": "This is the menu page of the application.",
+    "title": "Our Menu",
+    "subtitle": "A sensory journey through specialty coffee and conscious cuisine.",
+    "notice": "Ask our staff for our intolerance menu and vegan adaptations.",
+    "legend": {
+      "ve": "Vegan",
+      "vg": "Vegetarian",
+      "gf": "Gluten free",
+      "sa": "Sugar free"
+    },
     "card": {
       "recommended": "Recommended",
       "viewPhoto": "View photo",

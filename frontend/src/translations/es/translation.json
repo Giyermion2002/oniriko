@@ -56,8 +56,15 @@
     }
   },
   "menu": {
-    "title": "Página de menú",
-    "description": "Esta es la página de menú de la aplicación.",
+    "title": "Nuestra Carta",
+    "subtitle": "Un viaje sensorial a través del café de especialidad y la cocina consciente.",
+    "notice": "Pregunta a nuestro personal por nuestra carta de intolerancias y por adaptaciones veganas.",
+    "legend": {
+      "ve": "Vegano",
+      "vg": "Vegetariano",
+      "gf": "Sin gluten",
+      "sa": "Sin azúcar"
+    },
     "card": {
       "recommended": "Recomendado",
       "viewPhoto": "Ver fotografía",

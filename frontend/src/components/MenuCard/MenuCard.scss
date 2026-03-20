@@ -29,8 +29,16 @@
   &-header-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.25rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &-title-container {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    border-bottom: 3px solid $menu-card-accent;
+    padding-bottom: 0.5rem;
   }
 
   &-expand-btn {
@@ -39,15 +47,29 @@
   }
 
   &-title {
-    margin-bottom: 1.5rem;
-    font-weight: 700;
+    font-weight: 600 !important;
     color: var(--primary-color-dark, $primary-color-dark);
-    border-bottom: 3px solid $menu-card-accent;
-    display: inline-block;
-    padding-bottom: 0.5rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 1.4rem;
+    letter-spacing: 1.5px !important;
+    font-size: 1.7rem !important;
+    margin-bottom: 0;
+  }
+
+  &-category-price {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 700 !important;
+    color: var(--primary-color-dark, $primary-color-dark);
+    font-size: 1.7rem !important;
+  }
+
+  &-category-desc {
+    font-family: "Inter", sans-serif !important;
+    color: $text-muted !important;
+    font-weight: 300 !important;
+    font-size: 0.95rem !important;
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.75rem !important;
+    white-space: pre-line !important;
   }
 
   &-content {
@@ -131,6 +153,7 @@
       font-weight: 300 !important;
       font-size: 0.95rem !important;
       margin-top: 0.2rem !important;
+      white-space: pre-line !important;
     }
   }
 }

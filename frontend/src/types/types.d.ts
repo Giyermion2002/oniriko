@@ -11,12 +11,14 @@ export interface AppPage {
 export interface MenuItem {
   name: string;
   description: string;
-  price: string;
+  price?: string;
   favourite?: boolean;
   hasPhoto?: boolean;
 }
 
 export interface MenuCategory {
-  category: string;
+  name: string;
+  price?: string;
+  description?: string;
   items: MenuItem[];
 }

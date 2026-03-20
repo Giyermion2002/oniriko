@@ -9,11 +9,13 @@ import type { MenuItem } from "../../types/types";
 import "./MenuCard.scss";
 
 interface MenuCardProps {
-  category: string;
+  name: string;
+  price?: string;
+  description?: string;
   items: MenuItem[];
 }
 
-export const MenuCard = ({ category, items }: MenuCardProps) => {
+export const MenuCard = ({ name, price, description, items }: MenuCardProps) => {
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState(true);
   const [activePhoto, setActivePhoto] = useState<string | null>(null);
@@ -38,17 +40,31 @@ export const MenuCard = ({ category, items }: MenuCardProps) => {
   return (
     <Box className="menu-card">
       <Box className="menu-card-header-wrapper">
-        <Typography variant="h5" className="menu-card-title">
-          {category}
-        </Typography>
-        <IconButton
-          className="menu-card-expand-btn"
-          onClick={() => setExpanded(!expanded)}
-          aria-label="Toggle category"
-        >
-          {expanded ? <ExpandLessIcon fontSize="large" /> : <ExpandMoreIcon fontSize="large" />}
-        </IconButton>
+        <Box className="menu-card-title-container">
+          <Typography variant="h5" className="menu-card-title">
+            {name}
+          </Typography>
+          {price && (
+            <Typography variant="h5" className="menu-card-category-price">
+              {price}
+            </Typography>
+          )}
+        </Box>
+        {items.length > 0 && (
+          <IconButton
+            className="menu-card-expand-btn"
+            onClick={() => setExpanded(!expanded)}
+            aria-label="Toggle category"
+          >
+            {expanded ? <ExpandLessIcon fontSize="large" /> : <ExpandMoreIcon fontSize="large" />}
+          </IconButton>
+        )}
       </Box>
+      {description && (
+        <Typography variant="body2" className="menu-card-category-desc">
+          {description}
+        </Typography>
+      )}
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <Box className="menu-card-content">
@@ -73,16 +89,21 @@ export const MenuCard = ({ category, items }: MenuCardProps) => {
                   )}
                 </Typography>
 
-                <Box className="menu-card-item-dots" />
-
-                <Typography variant="subtitle1" className="menu-card-item-price">
-                  {item.price}
-                </Typography>
+                {item.price && (
+                  <>
+                    <Box className="menu-card-item-dots" />
+                    <Typography variant="subtitle1" className="menu-card-item-price">
+                      {item.price}
+                    </Typography>
+                  </>
+                )}
               </Box>
 
-              <Typography variant="body2" className="menu-card-item-desc">
-                {item.description}
-              </Typography>
+              {item.description && (
+                <Typography variant="body2" className="menu-card-item-desc">
+                  {item.description}
+                </Typography>
+              )}
             </Box>
           ))}
         </Box>
