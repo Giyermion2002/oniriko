@@ -1,15 +1,7 @@
-import { useTranslation } from "react-i18next";
+import { WIP } from "../components/WIP/WIP";
 
 const Social = () => {
-
-    const { t } = useTranslation();
-
-    return (
-        <div>
-            <span>{t("social.title")}</span><br />
-            <span>{t("social.description")}</span>
-        </div>
-    );
+    return <WIP titleKey="social.title" />;
 }
 
 export default Social;

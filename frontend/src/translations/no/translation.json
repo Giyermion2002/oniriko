@@ -73,11 +73,14 @@
     }
   },
   "products": {
-    "title": "Produktside",
-    "description": "Dette er produktsiden til applikasjonen."
+    "title": "Våre produkter"
   },
   "social": {
-    "title": "Sosiale medier-side",
-    "description": "Dette er sosiale medier-siden til applikasjonen."
+    "title": "Oníriko fellesskap"
+  },
+  "wip": {
+    "comming_soon": "Kommer snart",
+    "description": "Vi brygger noe spesielt for denne delen. Kom snart tilbake for å oppdage det.",
+    "back_home": "Tilbake til Hjem"
   }
 }

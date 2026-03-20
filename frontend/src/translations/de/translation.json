@@ -73,11 +73,14 @@
     }
   },
   "products": {
-    "title": "Produktseite",
-    "description": "Dies ist die Produktseite der Anwendung."
+    "title": "Unsere Produkte"
   },
   "social": {
-    "title": "Social Media Seite",
-    "description": "Dies ist die Social Media Seite der Anwendung."
+    "title": "Oníriko Gemeinschaft"
+  },
+  "wip": {
+    "comming_soon": "Demnächst",
+    "description": "Wir bereiten etwas Besonderes für diesen Bereich vor. Kommen Sie bald wieder, um es zu entdecken.",
+    "back_home": "Zurück zur Startseite"
   }
 }

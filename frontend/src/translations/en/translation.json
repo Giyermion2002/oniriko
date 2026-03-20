@@ -73,11 +73,14 @@
     }
   },
   "products": {
-    "title": "Products Page",
-    "description": "This is the products page of the application."
+    "title": "Our Products"
   },
   "social": {
-    "title": "Social Media Page",
-    "description": "This is the social media page of the application."
+    "title": "Oníriko Community"
+  },
+  "wip": {
+    "comming_soon": "Coming Soon",
+    "description": "We are brewing something special for this section. Come back soon to discover it.",
+    "back_home": "Back Home"
   }
 }

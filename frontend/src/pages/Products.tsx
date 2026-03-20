@@ -1,15 +1,7 @@
-import { useTranslation } from "react-i18next";
+import { WIP } from "../components/WIP/WIP";
 
 const Products = () => {
-
-    const { t } = useTranslation();
-
-    return (
-        <div>
-            <span>{t("products.title")}</span><br />
-            <span>{t("products.description")}</span>
-        </div>
-    );
+    return <WIP titleKey="products.title" />;
 }
 
 export default Products;

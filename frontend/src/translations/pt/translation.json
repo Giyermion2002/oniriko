@@ -73,11 +73,14 @@
     }
   },
   "products": {
-    "title": "Página de Produtos",
-    "description": "Esta é a página de produtos da aplicação."
+    "title": "Nossos Produtos"
   },
   "social": {
-    "title": "Página de Redes Sociais",
-    "description": "Esta é a página de redes sociais da aplicação."
+    "title": "Comunidade Oníriko"
+  },
+  "wip": {
+    "comming_soon": "Em Breve",
+    "description": "Estamos a preparar algo especial para esta secção. Volte em breve para descobrir.",
+    "back_home": "Voltar ao Início"
   }
 }
