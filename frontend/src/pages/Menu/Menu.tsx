@@ -1,9 +1,10 @@
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { useTranslation } from "react-i18next";
 import { MenuCard } from "../../components/MenuCard/MenuCard";
+import type { MenuCategory } from "../../types/types";
 import './Menu.scss';
 
-const menuItems = [
+const menuItems: MenuCategory[] = [
     {
       category: "CAFÉS DE ESPECIALIDAD",
       items: [

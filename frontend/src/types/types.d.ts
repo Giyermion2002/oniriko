@@ -8,9 +8,14 @@ export interface AppPage {
   navbarLink: NavbarLink;
 }
 
-interface MenuItem {
+export interface MenuItem {
   name: string;
   description: string;
   price: string;
-  favourite?: boolean
+  favourite?: boolean;
+}
+
+export interface MenuCategory {
+  category: string;
+  items: MenuItem[];
 }
