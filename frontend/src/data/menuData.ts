@@ -5,6 +5,7 @@ export const ALLERGEN_TAGS: AllergenTag[] = ['VE', 'VG', 'GF', 'SA'];
 export const menuItems: MenuCategory[] = [
   {
     name: "CAFÉS DE ESPECIALIDAD",
+    description: "Leche de avena +0.30€\nExtra shot de café +0.50€",
     items: [
       { name: "Espresso", description: "", price: "1.80€", hasPhoto: true },
       { name: "Latte M / L", description: "", price: "2.00€ / 2.50€" },
@@ -17,8 +18,6 @@ export const menuItems: MenuCategory[] = [
       { name: "Hibisco latte", description: "", price: "3.00€" },
       { name: "Coconut coffee", description: "", price: "3.50€" },
       { name: "Cold brew cóctel", description: "", price: "4.50€" },
-      { name: "Leche de avena", description: "", price: "+ 0.30€" },
-      { name: "Extra shot de café", description: "", price: "+ 0.50€" },
     ],
   },
   {
