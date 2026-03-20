@@ -4,6 +4,7 @@
     "navigation": {
       "home": "Home",
       "menu": "Menu",
+      "gallery": "Gallery",
       "products": "Products",
       "social": "Social Media"
     }
@@ -71,6 +72,10 @@
       "errorTitle": "Image not available",
       "errorDesc": "The photo for this product has not been uploaded yet."
     }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments captured at ONÍRIKO"
   },
   "products": {
     "title": "Our Products"

@@ -4,6 +4,7 @@
     "navigation": {
       "home": "Home",
       "menu": "Menu",
+      "gallery": "Galleria",
       "products": "Prodotti",
       "social": "Social Media"
     }
@@ -71,6 +72,10 @@
       "errorTitle": "Immagine non disponibile",
       "errorDesc": "La foto di questo prodotto non è ancora stata caricata."
     }
+  },
+  "gallery": {
+    "title": "Galleria",
+    "subtitle": "Momenti catturati all'ONÍRIKO"
   },
   "products": {
     "title": "I nostri Prodotti"

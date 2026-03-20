@@ -4,6 +4,7 @@
     "navigation": {
       "home": "Hjem",
       "menu": "Meny",
+      "gallery": "Galleri",
       "products": "Produkter",
       "social": "Sosiale medier"
     }
@@ -71,6 +72,10 @@
       "errorTitle": "Bilde ikke tilgjengelig",
       "errorDesc": "Bildet for dette produktet er ikke lastet opp ennå."
     }
+  },
+  "gallery": {
+    "title": "Galleri",
+    "subtitle": "Øyeblikk fanget på ONÍRIKO"
   },
   "products": {
     "title": "Våre produkter"

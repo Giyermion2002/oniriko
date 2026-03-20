@@ -3,9 +3,10 @@
     "title": "ONÍRIKO Spezialitätenkaffee",
     "navigation": {
       "home": "Home",
-      "menu": "Karte",
+      "menu": "Menü",
+      "gallery": "Galerie",
       "products": "Produkte",
-      "social": "Social Media"
+      "social": "Soziale Netzwerke"
     }
   },
   "footer": {
@@ -71,6 +72,10 @@
       "errorTitle": "Bild nicht verfügbar",
       "errorDesc": "Das Foto für dieses Produkt wurde noch nicht hochgeladen."
     }
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Momente festgehalten bei ONÍRIKO"
   },
   "products": {
     "title": "Unsere Produkte"

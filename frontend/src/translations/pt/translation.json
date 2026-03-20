@@ -4,8 +4,9 @@
     "navigation": {
       "home": "Início",
       "menu": "Menu",
+      "gallery": "Galeria",
       "products": "Produtos",
-      "social": "Redes Sociais"
+      "social": "Redes sociais"
     }
   },
   "footer": {
@@ -71,6 +72,10 @@
       "errorTitle": "Imagem não disponível",
       "errorDesc": "A foto deste produto ainda não foi carregada."
     }
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Momentos capturados no ONÍRIKO"
   },
   "products": {
     "title": "Nossos Produtos"

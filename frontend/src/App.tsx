@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer/Footer";
 
 const Home = React.lazy(() => import("./pages/Home/Home"));
 const Menu = React.lazy(() => import("./pages/Menu/Menu"));
+const Gallery = React.lazy(() => import("./pages/Gallery/Gallery"));
 const Products = React.lazy(() => import("./pages/Products"));
 const Social = React.lazy(() => import("./pages/Social"));
 
@@ -41,6 +42,13 @@ export const App = () => {
       navbarLink: {
         to: "/menu",
         label: t("header.navigation.menu")
+      },
+    },
+    {
+      element: <Gallery />,
+      navbarLink: {
+        to: "/gallery",
+        label: t("header.navigation.gallery")
       },
     },
     {
