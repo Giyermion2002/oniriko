@@ -8,13 +8,13 @@
   min-width: min(100%, 380px);
   break-inside: avoid;
   display: inline-block;
-  background-color: rgba(235, 222, 210, 0.85);
+  background-color: $menu-card-bg;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $menu-card-border;
   border-radius: 16px;
   padding: 3rem 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px $menu-card-shadow;
 
   &-header-wrapper {
     display: flex;
@@ -24,15 +24,15 @@
   }
 
   &-expand-btn {
-    color: #c89f72 !important;
+    color: $menu-card-accent !important;
     margin-top: -0.2rem !important;
   }
 
   &-title {
     margin-bottom: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color-dark, #2c2c2c);
-    border-bottom: 3px solid #c89f72;
+    color: var(--primary-color-dark, $primary-color-dark);
+    border-bottom: 3px solid $menu-card-accent;
     display: inline-block;
     padding-bottom: 0.5rem;
     text-transform: uppercase;
@@ -60,14 +60,14 @@
     &-name {
       font-family: "Playfair Display", serif !important;
       font-weight: 600 !important;
-      color: #222 !important;
+      color: $text-dark !important;
       font-size: 1.25rem !important;
       letter-spacing: 0.5px !important;
     }
 
     &-dots {
       flex-grow: 1;
-      border-bottom: 2px dotted #bbb;
+      border-bottom: 2px dotted $border-muted;
       margin: 0 2.5rem;
       position: relative;
       top: -4px;
@@ -76,13 +76,13 @@
     &-price {
       font-family: "Playfair Display", serif !important;
       font-weight: 700 !important;
-      color: #000 !important;
+      color: $text-darkest !important;
       font-size: 1.25rem !important;
     }
 
     &-desc {
       font-family: "Inter", sans-serif !important;
-      color: #666 !important;
+      color: $text-muted !important;
       font-weight: 300 !important;
       font-size: 0.95rem !important;
       margin-top: 0.2rem !important;

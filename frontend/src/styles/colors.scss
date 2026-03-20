@@ -1,6 +1,6 @@
 @use "sass:color";
 
-// Ahora que no hay video se deja sin transparentar.
+// Global Layout Colors
 $header-background: rgba(197, 181, 173, 0.95);
 $app-background: rgba(178, 173, 170, 0.95);
 $footer-background: rgba(197, 181, 173, 0.95);
@@ -8,3 +8,15 @@ $primary-color: rgba(96, 62, 12, 1);
 $primary-color-light: rgba(96, 62, 12, 0.75);
 $primary-color-dark: color.scale($primary-color, $lightness: -15%);
 $header-nav-color: #674d25;
+
+// MenuCard Component Colors
+$menu-card-bg: rgba(235, 222, 210, 0.85);
+$menu-card-border: rgba(255, 255, 255, 0.3);
+$menu-card-shadow: rgba(0, 0, 0, 0.15);
+$menu-card-accent: #c89f72;
+
+// Typography Colors
+$text-darkest: #000;
+$text-dark: #222;
+$text-muted: #666;
+$border-muted: #bbb;
