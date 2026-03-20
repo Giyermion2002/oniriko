@@ -108,14 +108,7 @@
         }
       }
 
-      .menu-card-item-allergen {
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: $menu-card-accent;
-        margin-left: 0.3rem;
-        font-family: 'Inter', sans-serif;
-        vertical-align: middle;
-      }
+
 
       .menu-card-item-camera {
         color: $text-muted;
@@ -134,6 +127,23 @@
         svg {
           font-size: 1.15rem;
         }
+      }
+    }
+
+    &-allergens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: -0.2rem;
+      margin-bottom: 0.3rem;
+
+      .menu-card-item-allergen {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: $menu-card-accent;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
       }
     }
 
