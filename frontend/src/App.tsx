@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import "./App.scss";
 import backgroundVideo from "./assets/videos/videoplayback.mp4";
 import { Header } from "./components/Header/Header";
@@ -15,7 +16,7 @@ const Social = React.lazy(() => import("./pages/Social"));
 export const App = () => {
 
   const { t } = useTranslation();
-  const { pathname } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     const scrollArea = document.getElementById("main-scroll-area");
@@ -24,7 +25,7 @@ export const App = () => {
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" }); // Fallback de seguridad
     }
-  }, [pathname]);
+  }, [location.pathname]);
 
   const pages: AppPage[] = [
     {
@@ -70,11 +71,26 @@ export const App = () => {
 
       <div className="main-scroll-area" id="main-scroll-area">
         <div className={"app-container"}>
-          <Routes>
-            {pages.map((page, idx) => (
-              <Route key={idx} path={page.navbarLink.to} element={page.element} />
-            ))}
-          </Routes>
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              {pages.map((page, idx) => (
+                <Route
+                  key={idx}
+                  path={page.navbarLink.to}
+                  element={
+                    <motion.div
+                      initial={{ opacity: 0, y: 15 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -15 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                    >
+                      {page.element}
+                    </motion.div>
+                  }
+                />
+              ))}
+            </Routes>
+          </AnimatePresence>
         </div>
         <Footer links={pages.map(page => page.navbarLink)} />
       </div>
