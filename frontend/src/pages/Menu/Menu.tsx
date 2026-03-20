@@ -3,10 +3,7 @@ import { useTranslation } from "react-i18next";
 import { MenuCard } from "../../components/MenuCard/MenuCard";
 import './Menu.scss';
 
-const Menu = () => {
-  const { t } = useTranslation();
-
-  const menuItems = [
+const menuItems = [
     {
       category: "CAFÉS DE ESPECIALIDAD",
       items: [
@@ -106,6 +103,9 @@ const Menu = () => {
     },
   ]
 
+const Menu = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <h1>{t("menu.title")}</h1>
@@ -113,7 +113,7 @@ const Menu = () => {
 
       <div className="menu-items">
         {menuItems.map((item) => (
-          <MenuCard category={item.category} items={item.items} />
+          <MenuCard key={item.category} category={item.category} items={item.items} />
         ))}
       </div>
     </div>
