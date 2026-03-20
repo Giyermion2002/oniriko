@@ -43,14 +43,10 @@ export const Header = ({ title, classNames = {}, navbarLinks }: HeaderProps) => 
         onClick={() => setOpenNavbar(false)}
         slotProps={{
           paper: {
-            className: 'navbar-drawer-modal',
-            sx: { width: '85%', maxWidth: '350px' } // No longer full screen
+            className: 'navbar-drawer-modal'
           },
           backdrop: {
-            sx: { 
-              backdropFilter: 'blur(4px)', 
-              backgroundColor: 'rgba(0, 0, 0, 0.4)' 
-            }
+            className: 'navbar-drawer-backdrop'
           }
         }}
       >

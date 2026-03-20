@@ -33,7 +33,7 @@ export const WIP = ({ titleKey }: WIPProps) => {
           }}
           className="wip-icon-wrapper"
         >
-          <CoffeeIcon sx={{ fontSize: 80 }} />
+          <CoffeeIcon className="wip-icon" />
         </motion.div>
 
         <Typography variant="h2" className="wip-title">

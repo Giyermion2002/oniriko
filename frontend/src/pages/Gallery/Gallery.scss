@@ -49,7 +49,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+        background: linear-gradient(to top, $overlay-dark, transparent);
         display: flex;
         align-items: flex-end;
         padding: 1rem;
@@ -77,8 +77,29 @@
 }
 
 .gallery-lightbox {
+  .gallery-lightbox-paper {
+    background-color: $lightbox-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: zoom-out;
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    z-index: 10;
+  }
+
   .lightbox-image {
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    cursor: default;
+    box-shadow: 0 0 40px $modal-shadow;
     border-radius: 4px;
   }
 }

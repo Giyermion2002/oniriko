@@ -85,10 +85,17 @@
 
   /* Estilos del nuevo Drawer Móvil */
   .navbar-drawer-modal {
+    width: 85% !important;
+    max-width: 350px !important;
     background: rgba($header-background, 0.8) !important;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     color: $primary-color;
+  }
+
+  .navbar-drawer-backdrop {
+    backdrop-filter: $backdrop-blur;
+    background-color: $overlay-dark;
   }
 
   .mobile-drawer {
