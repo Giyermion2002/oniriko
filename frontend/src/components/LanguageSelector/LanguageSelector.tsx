@@ -43,7 +43,7 @@ export const LanguageSelector = ({ className = "", compact }: LanguageSelectorPr
         const lang = languages.find((l) => l.code === selected);
         if (!lang) return null;
         return (
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div className="language-selector-selected-value">
             <img
               className="language-selector-item-flag"
               src={lang.flag}

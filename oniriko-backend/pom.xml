@@ -45,6 +45,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.stripe</groupId>
+            <artifactId>stripe-java</artifactId>
+            <version>28.3.0</version>
+        </dependency>
 	</dependencies>
 
 	<build>

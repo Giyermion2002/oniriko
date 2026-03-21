@@ -6,7 +6,27 @@
       "menu": "Menu",
       "gallery": "Galeria",
       "products": "Produtos",
-      "social": "Redes sociais"
+      "social": "Redes sociais",
+      "brunch": "Vales BRUNCH"
+    }
+  },
+  "brunch": {
+    "title": "Vales BRUNCH",
+    "description": "Ofereça ou desfrute da nossa experiência Oníriko com os nossos vales de brunch.",
+    "form": {
+      "fullName": "Nome Completo",
+      "email": "Endereço de e-mail",
+      "price": "Preço: 25€",
+      "secure_payment": "Pagamento seguro com criptografia SSL",
+      "submit": "Pagar e comprar",
+      "or": "ou pagar com",
+      "pay_card": "Pagar com cartão"
+    },
+    "payment": {
+      "unsupported": "O seu navegador não suporta pagamentos web.",
+      "success": "Pagamento efetuado com sucesso! Receberá o seu vale por e-mail.",
+      "not_available": "Este método de pagamento não está disponível ou configurado.",
+      "cancelled": "Pagamento cancelado pelo utilizador."
     }
   },
   "footer": {

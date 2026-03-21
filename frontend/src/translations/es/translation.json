@@ -6,7 +6,27 @@
       "menu": "Menú",
       "gallery": "Galería",
       "products": "Productos",
-      "social": "Redes sociales"
+      "social": "Redes sociales",
+      "brunch": "Bonos BRUNCH"
+    }
+  },
+  "brunch": {
+    "title": "Bonos BRUNCH",
+    "description": "Regala o disfruta de nuestra experiencia Oníriko con nuestros bonos de brunch.",
+    "form": {
+      "fullName": "Nombre y Apellidos",
+      "email": "Correo electrónico",
+      "price": "Precio: 25€",
+      "secure_payment": "Pago seguro con cifrado SSL",
+      "submit": "Pagar y comprar",
+      "or": "o paga con",
+      "pay_card": "Pagar con tarjeta"
+    },
+    "payment": {
+      "unsupported": "Tu navegador no soporta pagos web.",
+      "success": "¡Pago realizado con éxito! Recibirás tu bono por email.",
+      "not_available": "El servicio de pago no está disponible temporalmente.",
+      "cancelled": "Pago cancelado por el usuario."
     }
   },
   "footer": {

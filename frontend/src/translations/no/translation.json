@@ -6,7 +6,27 @@
       "menu": "Meny",
       "gallery": "Galleri",
       "products": "Produkter",
-      "social": "Sosiale medier"
+      "social": "Sosiale medier",
+      "brunch": "BRUNCH-kuponger"
+    }
+  },
+  "brunch": {
+    "title": "BRUNCH-kuponger",
+    "description": "Gi bort eller nyt vår Oníriko-opplevelse med våre brunch-kuponger.",
+    "form": {
+      "fullName": "Fullt navn",
+      "email": "E-postadresse",
+      "price": "Pris: 25€",
+      "secure_payment": "Sikker betaling med SSL-kryptering",
+      "submit": "Betal og kjøp",
+      "or": "eller betal med",
+      "pay_card": "Betal med kort"
+    },
+    "payment": {
+      "unsupported": "Nettleseren din støtter ikke webbetaling.",
+      "success": "Betalingen var vellykket! Du vil motta kupongen din per e-post.",
+      "not_available": "Denne betalingsmetoden er ikke tilgjengelig eller konfigurert.",
+      "cancelled": "Betaling avbrutt av brukeren."
     }
   },
   "footer": {

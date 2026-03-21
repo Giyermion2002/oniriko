@@ -12,6 +12,7 @@ const Home = React.lazy(() => import("./pages/Home/Home"));
 const Menu = React.lazy(() => import("./pages/Menu/Menu"));
 const Gallery = React.lazy(() => import("./pages/Gallery/Gallery"));
 const Products = React.lazy(() => import("./pages/Products"));
+const BrunchBonos = React.lazy(() => import("./pages/BrunchBonos/BrunchBonos"));
 const Social = React.lazy(() => import("./pages/Social"));
 
 export const App = () => {
@@ -56,6 +57,13 @@ export const App = () => {
       navbarLink: {
         to: "/products",
         label: t("header.navigation.products")
+      },
+    },
+    {
+      element: <BrunchBonos />,
+      navbarLink: {
+        to: "/brunch",
+        label: t("header.navigation.brunch")
       },
     },
     {

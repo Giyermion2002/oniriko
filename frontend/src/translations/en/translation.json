@@ -6,7 +6,27 @@
       "menu": "Menu",
       "gallery": "Gallery",
       "products": "Products",
-      "social": "Social Media"
+      "social": "Social Media",
+      "brunch": "BRUNCH Vouchers"
+    }
+  },
+  "brunch": {
+    "title": "BRUNCH Vouchers",
+    "description": "Gift or enjoy our Oníriko experience with our brunch vouchers.",
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "price": "Price: 25€",
+      "secure_payment": "Secure payment with SSL encryption",
+      "submit": "Pay and Buy",
+      "or": "or pay with",
+      "pay_card": "Pay with card"
+    },
+    "payment": {
+      "unsupported": "Your browser does not support web payments.",
+      "success": "Payment successful! You will receive your voucher by email.",
+      "not_available": "Payment service is temporarily unavailable.",
+      "cancelled": "Payment cancelled by user."
     }
   },
   "footer": {

@@ -6,7 +6,27 @@
       "menu": "Menü",
       "gallery": "Galerie",
       "products": "Produkte",
-      "social": "Soziale Netzwerke"
+      "social": "Soziale Netzwerke",
+      "brunch": "BRUNCH-Gutscheine"
+    }
+  },
+  "brunch": {
+    "title": "BRUNCH-Gutscheine",
+    "description": "Verschenken oder genießen Sie unser Oníriko-Erlebnis mit unseren Brunch-Gutscheinen.",
+    "form": {
+      "fullName": "Vor- und Nachname",
+      "email": "E-Mail-Adresse",
+      "price": "Preis: 25€",
+      "secure_payment": "Sichere Zahlung mit SSL-Verschlüsselung",
+      "submit": "Bezahlen und Kaufen",
+      "or": "oder bezahlen mit",
+      "pay_card": "Mit Karte bezahlen"
+    },
+    "payment": {
+      "unsupported": "Ihr Browser unterstützt keine Web-Zahlungen.",
+      "success": "Zahlung erfolgreich! Sie erhalten Ihren Gutschein per E-Mail.",
+      "not_available": "Diese Zahlungsmethode ist nicht verfügbar oder konfiguriert.",
+      "cancelled": "Zahlung vom Benutzer abgebrochen."
     }
   },
   "footer": {

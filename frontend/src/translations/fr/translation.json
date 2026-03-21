@@ -6,7 +6,27 @@
       "menu": "Menu",
       "gallery": "Galerie",
       "products": "Produits",
-      "social": "Réseaux sociaux"
+      "social": "Réseaux sociaux",
+      "brunch": "Bons BRUNCH"
+    }
+  },
+  "brunch": {
+    "title": "Bons BRUNCH",
+    "description": "Offrez ou profitez de notre expérience Oníriko avec nos bons brunch.",
+    "form": {
+      "fullName": "Nom et Prénom",
+      "email": "Adresse e-mail",
+      "price": "Prix : 25€",
+      "secure_payment": "Paiement sécurisé avec cryptage SSL",
+      "submit": "Payer et acheter",
+      "or": "ou payer avec",
+      "pay_card": "Payer par carte"
+    },
+    "payment": {
+      "unsupported": "Votre navigateur ne supporte pas les paiements Web.",
+      "success": "Paiement réussi ! Vous recevrez votre bon par e-mail.",
+      "not_available": "Ce mode de paiement n'est pas disponible ou configuré.",
+      "cancelled": "Paiement annulé par l'utilisateur."
     }
   },
   "footer": {
