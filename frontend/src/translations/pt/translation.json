@@ -1,0 +1,91 @@
+{
+  "header": {
+    "title": "Café de Especialidade ONÍRIKO",
+    "navigation": {
+      "home": "Início",
+      "menu": "Menu",
+      "gallery": "Galeria",
+      "products": "Produtos",
+      "social": "Redes sociais"
+    }
+  },
+  "footer": {
+    "principal": {
+      "title": "ONÍRIKO",
+      "description": "Um espaço onde cada chávena es uma viagem e cada visita é uma forma de voltar a casa."
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "hours": {
+      "title": "Horários",
+      "hours": {
+        "1": "Seg-Ter",
+        "2": "Qui-Sáb",
+        "3": "Dom"
+      }
+    },
+    "links": {
+      "title": "Links"
+    },
+    "copyright": "ONÍRIKO. Todos os direitos reservados"
+  },
+  "home": {
+    "first-paragraph": {
+      "text-1": "ONÍRIKO",
+      "text-2": "Uma mudança que vai muito além de uma única palavra.",
+      "text-3": "Oníriko vem de “onírico”, que pertence ao mundo dos sonhos… e é exatamente isso que vivemos aqui, todos os dias."
+    },
+    "second-paragraph": {
+      "text-1": "Que <b>sonhamos acordados</b>.",
+      "text-2": "Que cada chávena é uma <b>viagem</b>.",
+      "text-3": "Que cada visita é uma forma de <b>voltar a casa</b>.",
+      "text-4": "Este novo nome reflete quem somos: <b>sonhadores, viajantes e criadores de lares</b> em cada canto do nosso café.",
+      "text-5": "Sentimo-nos livres, entusiasmados e profundamente gratos por partilhar esta viagem convosco.",
+      "text-6": "Obrigado por fazer part de uma história que continua a crescer, agora mais forte do que nunca."
+    },
+    "third-paragraph": {
+      "text-1": "A marca que vêem aqui não es apenas um design: reflete quem somos e quem aspiramos ser. Cada viagem, cada pessoa, cada momento deixou uma marca na nossa identidade.",
+      "text-2": "Durante anos vivi com uma mala na mão, descobrindo sabores, conversas, música e recantos que nunca imaginei. E foi nessa viagem que compreendi que a identidade não é estática: constrói-se pelo caminho, através da troca com os outros e através da curiosidade pelo desconhecido.",
+      "text-3": "Aprender com diferentes culturas, crescer a cada passo e experimentar o novo ensinou-me que, no final, o mais valioso é encontrar o seu próprio lugar no mundo."
+    },
+    "fourth-paragraph": {
+      "text-1": "Assim nasceu o <b>ONÍRIKO</b>: um espaço que reúne todas estas marcas. Um lugar onde cada visitante deixa a sua história e, ao mesmo tempo, leva um pedaço da casa que construímos juntos.",
+      "text-2": "Hoje, o ONÍRIKO é aquele ponto de encontro onde cada chávena, cada canto e cada sorriso reflete um pouco da minha viagem e um pouco da vossa história. Aqui celebramos a diversidade de marcas, a busca constante e o valor infinito de crescer sentindo-se inteiro.",
+      "text-3": "Bem-vindos a um espaço onde a identidade se sente, se descobre e se partilha,",
+      "text-4": "Bem-vindos ao ONÍRIKO."
+    }
+  },
+  "menu": {
+    "title": "O Nosso Menu",
+    "notice": "Pergunte ao nosso pessoal pelo nosso menu de intolerâncias e adaptações veganas.",
+    "legend": {
+      "VE": "Vegan",
+      "VG": "Vegetariano",
+      "GF": "Sem glúten",
+      "SA": "Sem açúcar"
+    },
+    "card": {
+      "recommended": "Recomendado",
+      "viewPhoto": "Ver foto",
+      "photoAlt": "Foto do produto",
+      "errorTitle": "Imagem não disponível",
+      "errorDesc": "A foto deste produto ainda não foi carregada."
+    }
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Momentos capturados no ONÍRIKO"
+  },
+  "products": {
+    "title": "Nossos Produtos"
+  },
+  "social": {
+    "title": "Comunidade Oníriko"
+  },
+  "wip": {
+    "comming_soon": "Em Breve",
+    "description": "Estamos a preparar algo especial para esta secção. Volte em breve para descobrir.",
+    "back_home": "Voltar ao Início"
+  }
+}

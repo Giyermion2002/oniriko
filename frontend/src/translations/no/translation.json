@@ -1,0 +1,91 @@
+{
+  "header": {
+    "title": "ONÍRIKO Spesialkaffe",
+    "navigation": {
+      "home": "Hjem",
+      "menu": "Meny",
+      "gallery": "Galleri",
+      "products": "Produkter",
+      "social": "Sosiale medier"
+    }
+  },
+  "footer": {
+    "principal": {
+      "title": "ONÍRIKO",
+      "description": "Et rom der hver kopp er en reise og hvert besøk er en måte å komme hjem på."
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "hours": {
+      "title": "Åpningstider",
+      "hours": {
+        "1": "Man-Tirs",
+        "2": "Tors-Lør",
+        "3": "Søn"
+      }
+    },
+    "links": {
+      "title": "Lenker"
+    },
+    "copyright": "ONÍRIKO. Alle rettigheter reservert"
+  },
+  "home": {
+    "first-paragraph": {
+      "text-1": "ONÍRIKO",
+      "text-2": "En endring som går langt utover et enkelt ord.",
+      "text-3": "Oníriko kommer fra “oneiric”, som tilhører drømmeverdenen… og det er akkurat det vi opplever her, hver eneste dag."
+    },
+    "second-paragraph": {
+      "text-1": "At vi <b>drømmer våken</b>.",
+      "text-2": "At hver kopp er en <b>reise</b>.",
+      "text-3": "At hvert besøk er en måte å <b>komme hjem på</b>.",
+      "text-4": "Dette nye navnet gjenspeiler hvem vi er: <b>drømmere, reisende og hjemskapere</b> i hvert hjørne av kafeen vår.",
+      "text-5": "Vi føler oss frie, spente og dypt takknemlige for å dele denne reisen med deg.",
+      "text-6": "Takk for at du er en del av en historie som fortsetter å vokse, nå sterkere enn noen gang."
+    },
+    "third-paragraph": {
+      "text-1": "Merket du ser her er ikke bare et design: det gjenspeiler hvem vi er og hvem vi ønsker å være. Hver reise, hver person, hvert øyeblikk har satt spor i vår identitet.",
+      "text-2": "I årevis levde jeg med en koffert i hånden og oppdaget smaker, samtaler, musikk og hjørner jeg aldri hadde forestilt meg. Og det var på den reisen jeg forsto at identitet ikke er statisk: den bygges underveis, gjennom utveksling med andre og gjennom nysgjerrighet på det ukjente.",
+      "text-3": "Å lære av forskjellige kulturer, vokse for hvert skritt og oppleve det nye lærte meg at det mest verdifulle til slutt er å finne din egen plass i verden."
+    },
+    "fourth-paragraph": {
+      "text-1": "Slik ble <b>ONÍRIKO</b> født: et rom som samler alle disse merkene. Et sted hvor hver besøkende legger igjen sin historie og samtidig tar med seg en liten bit av hjemmet vi har bygget sammen.",
+      "text-2": "I dag er ONÍRIKO det møtepunktet hvor hver kopp, hvert hjørne og hvert smil gjenspeiler litt av min reise og litt av din historie. Her feirer vi mangfoldet av merker, den konstante søken og den uendelige verdien av å vokse mens man føler seg hel.",
+      "text-3": "Velkommen til et rom hvor identitet føles, oppdages og deles,",
+      "text-4": "Velkommen til ONÍRIKO."
+    }
+  },
+  "menu": {
+    "title": "Vår Meny",
+    "notice": "Spør personalet vårt om vår intoleransemeny og veganske tilpasninger.",
+    "legend": {
+      "VE": "Vegansk",
+      "VG": "Vegetarisk",
+      "GF": "Glutenfritt",
+      "SA": "Sukkerfritt"
+    },
+    "card": {
+      "recommended": "Anbefalt",
+      "viewPhoto": "Se bilde",
+      "photoAlt": "Produktbilde",
+      "errorTitle": "Bilde ikke tilgjengelig",
+      "errorDesc": "Bildet for dette produktet er ikke lastet opp ennå."
+    }
+  },
+  "gallery": {
+    "title": "Galleri",
+    "subtitle": "Øyeblikk fanget på ONÍRIKO"
+  },
+  "products": {
+    "title": "Våre produkter"
+  },
+  "social": {
+    "title": "Oníriko fellesskap"
+  },
+  "wip": {
+    "comming_soon": "Kommer snart",
+    "description": "Vi brygger noe spesielt for denne delen. Kom snart tilbake for å oppdage det.",
+    "back_home": "Tilbake til Hjem"
+  }
+}

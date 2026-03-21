@@ -27,7 +27,7 @@ reservas y suscripciones
   - [oniriko-bbdd](./docs/modelo-bbdd.md): Módulo para scripts de inicialización de la base de datos. Dispone de un Dockerfile que expone el puerto 3306.
   - oniriko-backend: Módulo para el backend, alojado en el puerto. Dispone de un Dockerfile que expone el puerto 8080.
   - oniriko-docker: Módulo con el docker-compose para orquestar la creación de imágenes y contenedores de los distintos módulos.
-  - oniriko-frontend: Módulo frontal desarrollado con el framework react-ts. Dispone de un Dockerfile que construye el frontal y lo levanta en un servidor con nginx en el puerto 80.
+  - frontend: Módulo frontal desarrollado con el framework react-ts. Dispone de un Dockerfile que construye el frontal y lo levanta en un servidor con nginx en el puerto 80.
 
 ## Construcción y ejecución
 Se requiere de un único comando para la construcción y ejecución de oniriko: `mvn clean install`. 

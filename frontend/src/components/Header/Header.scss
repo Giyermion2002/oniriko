@@ -1,0 +1,170 @@
+@use '../../styles/colors.scss' as *;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  min-height: 80px;
+  transition: all 0.3s ease-in-out;
+  
+  // Efecto Glassmorphism
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba($primary-color, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+
+  .header-title {
+    font-family: 'Arsenica', serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+    width: auto;
+    color: $primary-color;
+    white-space: nowrap;
+  }
+
+  .header-navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+  }
+
+  .header-language-selector {
+    width: auto;
+    min-width: unset;
+  }
+
+  .mobile {
+    display: none; // oculto en desktop
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 10dvh;
+    min-height: 60px;
+
+    .desktop {
+      display: none; // navbar y selector de idioma de modo desktop ocultos
+    }
+
+    .mobile {
+      display: block; // botón para abrir el navbar visible
+    }
+
+    .header-title {
+      width: 60dvw;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .language-selector {
+      min-width: 4em;
+
+      .MuiOutlinedInput-notchedOutline {
+        border: none;
+      }
+    }
+
+  }
+
+  .language-selector-menu {
+    .MuiMenu-list {
+      .language-selector-item {
+        justify-content: center;
+      }
+    }
+  }
+
+  /* Estilos del nuevo Drawer Móvil */
+  .navbar-drawer-modal {
+    width: 85% !important;
+    max-width: 350px !important;
+    background: rgba($header-background, 0.8) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: $primary-color;
+  }
+
+  .navbar-drawer-backdrop {
+    backdrop-filter: $backdrop-blur;
+    background-color: $overlay-dark;
+  }
+
+  .mobile-drawer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+
+    .drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .drawer-brand {
+        font-family: 'Arsenica', serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $primary-color;
+      }
+    }
+
+    .drawer-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+
+      .drawer-nav-item {
+        align-items: center;
+        width: 100%;
+
+        .nav-link {
+          font-family: 'Arsenica', serif;
+          font-size: 2.5rem;
+          font-weight: 600;
+          color: $primary-color;
+          margin: 0;
+          text-align: center;
+          width: 100%;
+          
+          &::after {
+            display: none; // No underline in drawer for cleaner look
+          }
+        }
+      }
+    }
+
+    .drawer-footer {
+      border-top: 1px solid rgba($primary-color, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .drawer-note {
+        display: block;
+        opacity: 0.6;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
