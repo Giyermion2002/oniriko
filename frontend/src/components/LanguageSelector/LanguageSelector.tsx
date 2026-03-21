@@ -37,8 +37,22 @@ export const LanguageSelector = ({ className = "", compact }: LanguageSelectorPr
 
   return (
     <Select
-      value={i18n.language ?? 'es'}
+      value={i18n.resolvedLanguage ?? 'es'}
       onChange={handleChange}
+      renderValue={(selected) => {
+        const lang = languages.find((l) => l.code === selected);
+        if (!lang) return null;
+        return (
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <img
+              className="language-selector-item-flag"
+              src={lang.flag}
+              alt={lang.label}
+            />
+            {!compact && <span className="language-selector-item-label">{lang.label}</span>}
+          </div>
+        );
+      }}
       variant="outlined"
       size="small"
       className={`language-selector ${className ?? ""} ${compact ? 'compact' : ''}`}
